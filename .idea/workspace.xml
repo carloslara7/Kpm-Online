@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28646dbc-89a0-4c5d-aa34-f1e991443db9" name="Default" comment="prueba">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kpm/kpm/Poset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kpm/kpm/PosetManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/Game5.as" afterPath="$PROJECT_DIR$/kpm/games/game5/Game5.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Kpm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399964212367" ignored="false" />
+    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400174810419" ignored="false" />
     <file path="/a.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1369802563933" ignored="false" />
     <file path="/Game3.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379479510568" ignored="false" />
     <file path="/fragment.js2" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399409031779" ignored="false" />
@@ -100,7 +100,7 @@
     <file path="/EBName.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399496001504" ignored="false" />
     <file path="/EBStd.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399337254118" ignored="false" />
     <file path="/*.regexp" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399924121993" ignored="false" />
-    <file path="/Game5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399965381901" ignored="false" />
+    <file path="/Game5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400178846402" ignored="false" />
     <file path="/Game5Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399926823571" ignored="false" />
     <file path="/EGoal.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399410992330" ignored="false" />
     <file path="/EGameCharacter.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399412657403" ignored="false" />
@@ -175,7 +175,7 @@
           <file leaf-file-name="Game5.as" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="147" column="10" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.33281493">
+                <state line="167" column="24" selection-start="5275" selection-end="5275" vertical-scroll-proportion="0.14618973">
                   <folding>
                     <element signature="e#187#217#0" expanded="true" />
                   </folding>
@@ -186,7 +186,7 @@
           <file leaf-file-name="EBStd.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/kpm/EBStd.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="-12.692307">
+                <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -289,10 +289,8 @@
           <file leaf-file-name="Game1.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="-12.846154">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -300,7 +298,7 @@
           <file leaf-file-name="Game1Data.as" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.5426573">
+                <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.02097902">
                   <folding />
                 </state>
               </provider>
@@ -377,7 +375,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -430,6 +427,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -448,8 +446,8 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
@@ -709,9 +707,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kpm/games/Game2Puzzle.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="24" selection-start="4941" selection-end="4941" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="213" column="24" selection-start="4941" selection-end="4941" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/common/Counter.as">
@@ -784,23 +780,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="-12.846154">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.5426573">
+        <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/kpm/EBStd.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="-12.692307">
+        <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -812,9 +799,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.02097902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="10" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.33281493">
+        <state line="167" column="24" selection-start="5275" selection-end="5275" vertical-scroll-proportion="0.14618973">
           <folding>
             <element signature="e#187#217#0" expanded="true" />
           </folding>

@@ -166,6 +166,44 @@ public class Game5 extends Game {
         Util.debug("Game5.setupPiecesAndWholes " + G5Data.numPieces);
         //Randomize positions for wholes and pieces
         var j : int = 0;
+        /*
+        var numPiecesPlacedSoFar : uint;
+
+        for (var i=0; i < mNodes.length ; i++)
+        while(true)
+
+            if(i%2)
+                numPiecesOrWholesNow = Util.getRandBtw(minAdjacentPieces, maxAdjacentPieces);
+            else
+                numPiecesOrWholesNow = Util.getRandBtw(minAdjacentWholes, maxAdjacentWholes)
+
+            numPiecesOrWholesSoFar += numPiecesOrWholes;
+
+
+            if(G5Data.numTotalNodes > numPiecesPlacedSoFar)
+                if(i%2)
+                    mAdjacentsPieces[i] = numPiecesOrWholesNow;
+                else
+                    mAdjacentsWholes[i] = numPiecesOrWholesNow;
+            else
+                numPiecesOrWholesSoFar -= numPiecesOrWholesNow;
+                piecesOrWholesNow = Util.getRandBtw(1, G5Data.numTotalNodes - numPiecesOrWholesSoFar);
+                numPiecesPlacedSoFar += mAdjacentWholes[i];
+            i++;
+
+
+        else
+
+
+        */
+
+
+        //private function placeNodeInPath(pWhole : Boolean, i : int, j : int);
+            //create movie clip
+            //add it to path
+
+
+
 
 
         for (var i = G5Data.firstNumber; i< G5Data.numTotalNodes + G5Data.firstNumber; i++)
