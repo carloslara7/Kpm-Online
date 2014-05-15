@@ -1,0 +1,26 @@
+
+<LOG>
+  <creationdate>Mon Jan 31 10:46:36 GMT-0700 2011</creationdate>
+  <UID>000000006</UID>
+  <FIRST_NAME>Aubrianah</FIRST_NAME>
+  <LAST_NAME>Lara</LAST_NAME>
+</LOG>
+<session>
+<bubble game_id="G1" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-0-01T10:46:48" bubbleStatus="Passed" numAttempts="3" globalScore="5.0754" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="58" accompanied="true" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task/>
+  <task success="true" taskScore="0.866" globalScore="0.866" time="8.75" timeFirstMove="8.75" goal="Yellow" badMoveCounter="0" numberOfObjects="7" numberOfGoal="1"/>
+  <task success="true" taskScore="0.866" globalScore="1.732" time="6.5" timeFirstMove="6.5" goal="Green" badMoveCounter="0" numberOfObjects="7" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7454" globalScore="2.4774" time="5" timeFirstMove="5" goal="Blue" badMoveCounter="0" numberOfObjects="7" numberOfGoal="2"/>
+  <task success="true" taskScore="0.866" globalScore="3.3434" time="29" timeFirstMove="29" goal="Orange" badMoveCounter="0" numberOfObjects="7" numberOfGoal="1"/>
+  <task success="true" taskScore="0.866" globalScore="4.2094" time="4" timeFirstMove="4" goal="Blue" badMoveCounter="0" numberOfObjects="7" numberOfGoal="1"/>
+  <bubble_status_changed id="IdentifyColor_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<session>
+<session>
+<session>
+<session><sessionTime startTime="Wed Feb 23 14:18:39 GMT-0700 2011" playDuration="0.09" finishTime="Wed Feb 23 14:18:44 GMT-0700 2011"/>
+</session>
+
+<session><sessionTime startTime="Wed Feb 23 21:12:32 GMT-0600 2011" playDuration="0.08" finishTime="Wed Feb 23 21:12:37 GMT-0600 2011"/>
+</session>

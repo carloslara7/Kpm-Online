@@ -1,0 +1,259 @@
+<KID>
+  <UID>111111111</UID>
+  <FIRST_NAME>Teacher</FIRST_NAME>
+  <LAST_NAME>None</LAST_NAME>
+  <AGE>26</AGE>
+  <LOCATION>San Juan Bueno</LOCATION>
+  <PRIMARY_LANGUAGE>SPA</PRIMARY_LANGUAGE>
+  <GAME_LANGUAGE>SPA</GAME_LANGUAGE>
+  <FIRST_TIME>true</FIRST_TIME>
+  <BUBBLE_STATUS>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyColor1</BUBBLE_ID>
+      <STATUS>Active</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyFinger1</BUBBLE_ID>
+      <STATUS>Active</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense1</BUBBLE_ID>
+      <STATUS>Active</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape1</BUBBLE_ID>
+      <STATUS>Active</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyShape1</BUBBLE_ID>
+      <STATUS>Active</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyColor1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyNumeral0</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyNumeral1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyNumeral2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyFinger0</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyFinger1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyFinger2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Identify5Frame0</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Identify5Frame1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Identify5Frame2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyMixed1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyMixed2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count55Frame1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count55Frame2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count55Frame3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count55Frame4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Numeral1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Numeral2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Numeral3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Numeral4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Finger1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Finger2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Finger3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Finger4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Mixed1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Mixed2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Mixed3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>Count5Mixed4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense5</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense6</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>SpatialSense7</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape4</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape5</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape6</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>MatchShape7</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+      
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyShape1</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyShape2</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+    </BUBBLE>
+    <BUBBLE>
+      <BUBBLE_ID>IdentifyShape3</BUBBLE_ID>
+      <STATUS>Complete</STATUS>
+    </BUBBLE>
+  </BUBBLE_STATUS>
+</KID>

@@ -1,0 +1,226 @@
+
+<LOG>
+  <creationdate>Tue Jan 25 09:36:04 GMT-0700 2011</creationdate>
+  <UID>000000010</UID>
+  <FIRST_NAME>DJ</FIRST_NAME>
+  <LAST_NAME>Ironshell</LAST_NAME>
+</LOG>
+<session>
+<bubble game_id="G1" bubbleName="SpatialSense" bubbleLevel="1" start="2011-0-02T09:36:13" bubbleStatus="Passed" numAttempts="3" globalScore="5" scoreToEnjoy="3" scoreToComplete="4" bubbleDuration="54" accompanied="false" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task/>
+  <task initialTile="[ x : 1 y : 2 ] " success="true" taskScore="1" globalScore="1" time="18.5" timeFirstMove="11.75" goal="[ x : 1 y : 7 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="5" lengthOfPath="5" distanceFromTarget="0"/>
+  <task initialTile="[ x : 2 y : 4 ] " success="true" taskScore="1" globalScore="2" time="6.25" timeFirstMove="3" goal="[ x : 2 y : 1 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="3" lengthOfPath="3" distanceFromTarget="0"/>
+  <task initialTile="[ x : 9 y : 3 ] " success="true" taskScore="1" globalScore="3" time="7.5" timeFirstMove="4.25" goal="[ x : 9 y : 6 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="3" lengthOfPath="3" distanceFromTarget="0"/>
+  <task initialTile="[ x : 2 y : 6 ] " success="true" taskScore="1" globalScore="4" time="11.25" timeFirstMove="5" goal="[ x : 2 y : 1 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="5" lengthOfPath="5" distanceFromTarget="0"/>
+  <bubble_status_changed id="SpatialSense_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+<sessionTime startTime="Tue Jan 25 09:36:04 GMT-0700 2011" playDuration="1.74" finishTime="Tue Jan 25 09:37:48 GMT-0700 2011"/>
+</session>
+
+<session>
+<bubble game_id="G3" bubbleName="IdentifyNumeral" bubbleLevel="1" start="2011-01-05T10:19:37" bubbleStatus="Enjoy" numAttempts="2" globalScore="0.7071" scoreToEnjoy="-2.6458" scoreToComplete="2.6458" bubbleDuration="0" accompanied="false" passCounter="0" failCounter="0" enjoyedCounter="1">
+  <task/>
+  <task success="true" taskScore="0.7071" globalScore="0.7071" time="0" timeFirstMove="0" goal="2" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="1.4142" time="0" timeFirstMove="0" goal="3" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="-1.4142" globalScore="0" time="0" timeFirstMove="0" goal="2" badMoveCounter="1" numberOfObjects="3" numberOfGoal="1">
+    <failed taskScore="-1.4142" time="0" goal="2" currentMove="null"/>
+  </task>
+  <task success="true" taskScore="0.7071" globalScore="0.7071" time="0" timeFirstMove="0" goal="3" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="1.4142" time="0" timeFirstMove="0" goal="2" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="-1.4142" globalScore="0" time="0" timeFirstMove="0" goal="1" badMoveCounter="1" numberOfObjects="3" numberOfGoal="1">
+    <failed taskScore="-1.4142" time="0" goal="1" currentMove="null"/>
+  </task>
+  <bubble_status_changed id="IdentifyNumeral_1" Status="true" LastOutcome="Enjoy"/>
+</bubble>
+
+<bubble game_id="G1" bubbleName="IdentifySize" bubbleLevel="1" start="2011-01-05T10:22:14" bubbleStatus="Enjoy" numAttempts="2" globalScore="-2.1273" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="77" accompanied="false" passCounter="0" failCounter="0" enjoyedCounter="1">
+  <task/>
+  <task success="true" taskScore="0.6325" globalScore="0.6325" time="17.5" timeFirstMove="17.5" goal="Big" badMoveCounter="0" numberOfObjects="7" numberOfGoal="3"/>
+  <task success="true" taskScore="-1.3416" globalScore="-0.7091" time="6" timeFirstMove="2.5" goal="Small" badMoveCounter="2" numberOfObjects="7" numberOfGoal="2">
+    <failed taskScore="-1.3416" time="2.5" goal="Small" currentMove="Big"/>
+  </task>
+  <task success="true" taskScore="-1.3416" globalScore="-2.0507" time="5.25" timeFirstMove="4" goal="Big" badMoveCounter="1" numberOfObjects="7" numberOfGoal="2">
+    <failed taskScore="-1.3416" time="4" goal="Big" currentMove="Small"/>
+  </task>
+  <task success="true" taskScore="0.6325" globalScore="-1.4182" time="3" timeFirstMove="3" goal="Big" badMoveCounter="0" numberOfObjects="7" numberOfGoal="3"/>
+  <task success="true" taskScore="-1.3416" globalScore="-2.7598" time="27.75" timeFirstMove="2.25" goal="Small" badMoveCounter="5" numberOfObjects="7" numberOfGoal="2">
+    <failed taskScore="-1.3416" time="2.25" goal="Small" currentMove="Big"/>
+    <failed taskScore="-1.3416" time="5.25" goal="Small" currentMove="Big"/>
+    <failed taskScore="-1.3416" time="7.75" goal="Small" currentMove="Big"/>
+    <failed taskScore="-1.3416" time="14.75" goal="Small" currentMove="Big"/>
+    <failed taskScore="-1.3416" time="23.5" goal="Small" currentMove="Big"/>
+  </task>
+  <bubble_status_changed id="IdentifySize_1" Status="true" LastOutcome="Enjoy"/>
+</bubble>
+
+<bubble game_id="G2" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-01-05T10:23:58" bubbleStatus="NotPlayed" numAttempts="1" globalScore="-2.9918" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="15.25" accompanied="false" passCounter="0" failCounter="2" enjoyedCounter="0">
+  <task shapeAttempts="0" success="true" taskScore="-1.1832" globalScore="-1.1832" time="15.25" timeFirstMove="3" goal="Green" badMoveCounter="7" numberOfObjects="6" numberOfGoal="1">
+    <failed taskScore="-1.1832" time="3" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="6.25" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="7.25" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="8.25" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="9" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="10.5" goal="Green" currentMove="Blue"/>
+    <failed taskScore="-1.1832" time="13" goal="Green" currentMove="Orange"/>
+  </task>
+  <task shapeAttempts="0" success="true" taskScore="-1.2247" globalScore="-2.4079" time="0" timeFirstMove="0" goal="Yellow" badMoveCounter="14" numberOfObjects="5" numberOfGoal="1">
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Orange"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Red"/>
+    <failed taskScore="-1.2247" time="0" goal="Yellow" currentMove="Blue"/>
+  </task>
+  <task shapeAttempts="6" success="true" taskScore="-1.291" globalScore="-3.6989" time="0" timeFirstMove="0" goal="Red" badMoveCounter="19" numberOfObjects="4" numberOfGoal="1">
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Blue"/>
+  </task>
+  <task shapeAttempts="8" success="true" taskScore="0.7071" globalScore="-2.9918" time="0" timeFirstMove="0" goal="Orange" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task shapeAttempts="9" success="true" taskScore="0" globalScore="-2.9918" time="0" timeFirstMove="0" goal="Blue" badMoveCounter="0" numberOfObjects="2" numberOfGoal="2"/>
+</bubble>
+
+<bubble game_id="G1" bubbleName="IdentifyDiceDots" bubbleLevel="1" start="2011-01-05T10:25:58" bubbleStatus="NotPlayed" numAttempts="1" globalScore="-5.2579" scoreToEnjoy="-2.6458" scoreToComplete="2.6458" bubbleDuration="88" accompanied="false" passCounter="0" failCounter="2" enjoyedCounter="0">
+  <task/>
+  <task success="true" taskScore="-1.2247" globalScore="-1.2247" time="9.25" timeFirstMove="4.5" goal="2" badMoveCounter="2" numberOfObjects="5" numberOfGoal="1">
+    <failed taskScore="-1.2247" time="4.5" goal="2" currentMove="NUMBER3"/>
+    <failed taskScore="-1.2247" time="7" goal="2" currentMove="NUMBER1"/>
+  </task>
+  <task success="true" taskScore="-1.5275" globalScore="-2.7522" time="17.75" timeFirstMove="4.5" goal="1" badMoveCounter="2" numberOfObjects="5" numberOfGoal="2">
+    <failed taskScore="-1.5275" time="4.5" goal="1" currentMove="NUMBER3"/>
+    <failed taskScore="-1.5275" time="10.25" goal="1" currentMove="NUMBER3"/>
+  </task>
+  <task success="true" taskScore="-1.2247" globalScore="-3.9769" time="15.5" timeFirstMove="4.25" goal="2" badMoveCounter="5" numberOfObjects="5" numberOfGoal="1">
+    <failed taskScore="-1.2247" time="4.25" goal="2" currentMove="NUMBER1"/>
+    <failed taskScore="-1.2247" time="8" goal="2" currentMove="NUMBER3"/>
+    <failed taskScore="-1.2247" time="11.25" goal="2" currentMove="NUMBER3"/>
+    <failed taskScore="-1.2247" time="13" goal="2" currentMove="NUMBER3"/>
+  </task>
+  <task success="true" taskScore="-1.5275" globalScore="-5.5044" time="13" timeFirstMove="3.75" goal="3" badMoveCounter="2" numberOfObjects="5" numberOfGoal="2">
+    <failed taskScore="-1.5275" time="3.75" goal="3" currentMove="NUMBER2"/>
+    <failed taskScore="-1.5275" time="10.75" goal="3" currentMove="NUMBER1"/>
+  </task>
+  <task success="true" taskScore="-1.2247" globalScore="-6.7291" time="5.75" timeFirstMove="3.25" goal="2" badMoveCounter="1" numberOfObjects="5" numberOfGoal="1">
+    <failed taskScore="-1.2247" time="3.25" goal="2" currentMove="NUMBER3"/>
+  </task>
+  <task success="true" taskScore="0.8165" globalScore="-5.9126" time="6.25" timeFirstMove="6.25" goal="1" badMoveCounter="0" numberOfObjects="5" numberOfGoal="1"/>
+</bubble>
+
+<bubble game_id="G2" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-01-05T10:27:55" bubbleStatus="NotPlayed" numAttempts="1" globalScore="-4.9658" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="23.5" accompanied="false" passCounter="0" failCounter="4" enjoyedCounter="0">
+  <task shapeAttempts="0" success="true" taskScore="-1.1832" globalScore="-1.1832" time="23.5" timeFirstMove="3.5" goal="Blue" badMoveCounter="8" numberOfObjects="6" numberOfGoal="1">
+    <failed taskScore="-1.1832" time="3.5" goal="Blue" currentMove="Yellow"/>
+    <failed taskScore="-1.1832" time="7.25" goal="Blue" currentMove="Orange"/>
+    <failed taskScore="-1.1832" time="8" goal="Blue" currentMove="Orange"/>
+    <failed taskScore="-1.1832" time="9.75" goal="Blue" currentMove="Red"/>
+    <failed taskScore="-1.1832" time="10.25" goal="Blue" currentMove="Red"/>
+    <failed taskScore="-1.1832" time="11.75" goal="Blue" currentMove="Green"/>
+    <failed taskScore="-1.1832" time="18" goal="Blue" currentMove="Red"/>
+    <failed taskScore="-1.1832" time="18.75" goal="Blue" currentMove="Red"/>
+  </task>
+  <task shapeAttempts="1" success="true" taskScore="0.6547" globalScore="-0.5285" time="0" timeFirstMove="0" goal="Yellow" badMoveCounter="0" numberOfObjects="5" numberOfGoal="2"/>
+  <task shapeAttempts="4" success="true" taskScore="-1.291" globalScore="-1.8195" time="0" timeFirstMove="0" goal="Red" badMoveCounter="3" numberOfObjects="4" numberOfGoal="1">
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Green"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Green"/>
+    <failed taskScore="-1.291" time="0" goal="Red" currentMove="Green"/>
+  </task>
+  <task shapeAttempts="2" success="true" taskScore="-1.4142" globalScore="-3.2337" time="0" timeFirstMove="0" goal="Orange" badMoveCounter="1" numberOfObjects="3" numberOfGoal="1">
+    <failed taskScore="-1.4142" time="0" goal="Orange" currentMove="Green"/>
+  </task>
+  <task shapeAttempts="5" success="true" taskScore="-1.7321" globalScore="-4.9658" time="0" timeFirstMove="0" goal="Green" badMoveCounter="1" numberOfObjects="2" numberOfGoal="1">
+    <failed taskScore="-1.7321" time="0" goal="Green" currentMove="Yellow"/>
+  </task>
+</bubble>
+
+<bubble game_id="G3" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-01-05T10:29:20" bubbleStatus="NotPlayed" numAttempts="1" globalScore="-3.5829" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="0" accompanied="false" passCounter="0" failCounter="6" enjoyedCounter="0">
+  <task/>
+  <task success="true" taskScore="0.8452" globalScore="0.8452" time="0" timeFirstMove="0" goal="blue" badMoveCounter="0" numberOfObjects="6" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="1.5523" time="0" timeFirstMove="0" goal="red" badMoveCounter="0" numberOfObjects="6" numberOfGoal="2"/>
+  <task success="true" taskScore="-1.1547" globalScore="0.3976" time="0" timeFirstMove="0" goal="orange" badMoveCounter="3" numberOfObjects="7" numberOfGoal="1">
+    <failed taskScore="-1.1547" time="0" goal="orange" currentMove="green"/>
+    <failed taskScore="-1.1547" time="0" goal="orange" currentMove="red"/>
+    <failed taskScore="-1.1547" time="0" goal="orange" currentMove="blue"/>
+  </task>
+  <task success="true" taskScore="-1.4142" globalScore="-1.0166" time="0" timeFirstMove="0" goal="red" badMoveCounter="3" numberOfObjects="6" numberOfGoal="2">
+    <failed taskScore="-1.4142" time="0" goal="red" currentMove="yellow"/>
+    <failed taskScore="-1.4142" time="0" goal="red" currentMove="yellow"/>
+    <failed taskScore="-1.4142" time="0" goal="red" currentMove="blue"/>
+  </task>
+  <task success="true" taskScore="-1.2247" globalScore="-2.2413" time="0" timeFirstMove="0" goal="orange" badMoveCounter="1" numberOfObjects="5" numberOfGoal="1">
+    <failed taskScore="-1.2247" time="0" goal="orange" currentMove="green"/>
+  </task>
+</bubble>
+
+<session>
+<bubble game_id="G3" bubbleName="IdentifySize" bubbleLevel="1" start="2011-01-01T09:44:23" bubbleStatus="Enjoy" numAttempts="3" globalScore="0.478" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="0" accompanied="false" passCounter="0" failCounter="0" enjoyedCounter="1">
+  <task/>
+  <task success="true" taskScore="0.5" globalScore="0.5" time="0" timeFirstMove="0" goal="green" badMoveCounter="0" numberOfObjects="5" numberOfGoal="3"/>
+  <task success="true" taskScore="0.8165" globalScore="1.3165" time="0" timeFirstMove="0" goal="red" badMoveCounter="0" numberOfObjects="5" numberOfGoal="1"/>
+  <task success="true" taskScore="-2.6458" globalScore="-1.3293" time="0" timeFirstMove="0" goal="orange" badMoveCounter="1" numberOfObjects="4" numberOfGoal="3">
+    <failed taskScore="-2.6458" time="0" goal="orange" currentMove="orange"/>
+  </task>
+  <task success="true" taskScore="0.7746" globalScore="-0.5547" time="0" timeFirstMove="0" goal="green" badMoveCounter="0" numberOfObjects="4" numberOfGoal="1"/>
+  <task success="true" taskScore="0.378" globalScore="-0.1767" time="0" timeFirstMove="0" goal="green" badMoveCounter="0" numberOfObjects="4" numberOfGoal="3"/>
+</bubble>
+
+<bubble game_id="G3" bubbleName="Identify5Frame" bubbleLevel="1" start="2011-01-01T09:45:56" bubbleStatus="Passed" numAttempts="3" globalScore="2.8284" scoreToEnjoy="-2.6458" scoreToComplete="2.6458" bubbleDuration="0" accompanied="false" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task/>
+  <task success="true" taskScore="-1.4142" globalScore="-1.4142" time="0" timeFirstMove="0" goal="1" badMoveCounter="2" numberOfObjects="3" numberOfGoal="1">
+    <failed taskScore="-1.4142" time="0" goal="1" currentMove="null"/>
+    <failed taskScore="-1.4142" time="0" goal="1" currentMove="null"/>
+  </task>
+  <task success="true" taskScore="0.7071" globalScore="-0.7071" time="0" timeFirstMove="0" goal="3" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="0" time="0" timeFirstMove="0" goal="1" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="0.7071" time="0" timeFirstMove="0" goal="2" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="1.4142" time="0" timeFirstMove="0" goal="3" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="2.1213" time="0" timeFirstMove="0" goal="1" badMoveCounter="0" numberOfObjects="3" numberOfGoal="1"/>
+  <bubble_status_changed id="Identify5Frame_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<session>
+<bubble game_id="G1" bubbleName="SpatialSense" bubbleLevel="2" start="2011-01-02T10:36:23" bubbleStatus="Passed" numAttempts="3" globalScore="5" scoreToEnjoy="3" scoreToComplete="4" bubbleDuration="58.25" accompanied="false" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task/>
+  <task initialTile="[ x : 9 y : 3 ] " success="true" taskScore="1" globalScore="1" time="12.25" timeFirstMove="6.25" goal="[ x : 6 y : 3 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="3" lengthOfPath="3" distanceFromTarget="0"/>
+  <task initialTile="[ x : 3 y : 5 ] " success="true" taskScore="1" globalScore="2" time="15" timeFirstMove="2.75" goal="[ x : 7 y : 5 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="4" lengthOfPath="4" distanceFromTarget="0"/>
+  <task initialTile="[ x : 7 y : 5 ] " success="true" taskScore="1" globalScore="3" time="14" timeFirstMove="7.25" goal="[ x : 2 y : 5 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="5" lengthOfPath="5" distanceFromTarget="0"/>
+  <task initialTile="[ x : 1 y : 6 ] " success="true" taskScore="1" globalScore="4" time="9.75" timeFirstMove="4.75" goal="[ x : 5 y : 6 ] " badMoveCounter="0" numBackTracks="0" lengthOfOptimalPath="4" lengthOfPath="4" distanceFromTarget="0"/>
+  <bubble_status_changed id="SpatialSense_2" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<bubble game_id="G2" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-01-02T10:37:56" bubbleStatus="Passed" numAttempts="3" globalScore="3.4609" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="3" accompanied="false" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task shapeAttempts="0" success="true" taskScore="0.8452" globalScore="0.8452" time="3" timeFirstMove="3" goal="Blue" badMoveCounter="0" numberOfObjects="6" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.8165" globalScore="1.6617" time="0" timeFirstMove="0" goal="Orange" badMoveCounter="0" numberOfObjects="5" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.7746" globalScore="2.4363" time="0" timeFirstMove="0" goal="Green" badMoveCounter="0" numberOfObjects="4" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.4472" globalScore="2.8835" time="0" timeFirstMove="0" goal="Yellow" badMoveCounter="0" numberOfObjects="3" numberOfGoal="2"/>
+  <task shapeAttempts="0" success="true" taskScore="0.5774" globalScore="3.4609" time="0" timeFirstMove="0" goal="Red" badMoveCounter="0" numberOfObjects="2" numberOfGoal="1"/>
+  <bubble_status_changed id="IdentifyColor_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<bubble game_id="G2" bubbleName="IdentifyColor" bubbleLevel="2" start="2011-01-02T10:38:32" bubbleStatus="NotPlayed" numAttempts="1" globalScore="0" scoreToEnjoy="-2.8284" scoreToComplete="2.8284" bubbleDuration="0" accompanied="false" passCounter="0" failCounter="0" enjoyedCounter="0"/>
+<sessionTime startTime="Tue Feb 15 10:36:17 GMT-0700 2011" playDuration="114.45" finishTime="Tue Feb 15 12:30:44 GMT-0700 2011"/>
+</session>
+
+<session>

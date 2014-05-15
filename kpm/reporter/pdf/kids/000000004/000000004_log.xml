@@ -1,0 +1,42 @@
+
+<LOG>
+  <creationdate>Mon Jan 31 10:43:51 GMT-0700 2011</creationdate>
+  <UID>000000004</UID>
+  <FIRST_NAME>Sorren</FIRST_NAME>
+  <LAST_NAME>Cochran</LAST_NAME>
+</LOG>
+<session>
+<bubble game_id="G3" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-0-01T10:43:57" bubbleStatus="Passed" numAttempts="3" globalScore="4.6665" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="0" accompanied="true" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task/>
+  <task success="true" taskScore="0.7071" globalScore="0.7071" time="0" timeFirstMove="0" goal="red" badMoveCounter="0" numberOfObjects="6" numberOfGoal="2"/>
+  <task success="true" taskScore="0.8165" globalScore="1.5236" time="0" timeFirstMove="0" goal="blue" badMoveCounter="0" numberOfObjects="5" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7454" globalScore="2.269" time="0" timeFirstMove="0" goal="yellow" badMoveCounter="0" numberOfObjects="7" numberOfGoal="2"/>
+  <task success="true" taskScore="0.8452" globalScore="3.1142" time="0" timeFirstMove="0" goal="yellow" badMoveCounter="0" numberOfObjects="6" numberOfGoal="1"/>
+  <task success="true" taskScore="0.7071" globalScore="3.8213" time="0" timeFirstMove="0" goal="blue" badMoveCounter="0" numberOfObjects="6" numberOfGoal="2"/>
+  <bubble_status_changed id="IdentifyColor_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<session>
+<session>
+<session><sessionTime startTime="Thu Feb 3 09:52:14 GMT-0700 2011" playDuration="0.17" finishTime="Thu Feb 3 09:52:25 GMT-0700 2011"/>
+</session>
+
+<session>
+<session><sessionTime startTime="Mon Feb 14 09:59:25 GMT-0700 2011" playDuration="0.65" finishTime="Mon Feb 14 10:00:05 GMT-0700 2011"/>
+</session>
+
+<session>
+<session><sessionTime startTime="Mon Feb 14 10:00:38 GMT-0700 2011" playDuration="0.32" finishTime="Mon Feb 14 10:00:57 GMT-0700 2011"/>
+</session>
+
+<session>
+<session><sessionTime startTime="Tue Feb 15 12:35:21 GMT-0700 2011" playDuration="0.06" finishTime="Tue Feb 15 12:35:25 GMT-0700 2011"/>
+</session>
+
+<session>
+<session><sessionTime startTime="Tue Feb 22 07:32:44 GMT-0700 2011" playDuration="0.13" finishTime="Tue Feb 22 07:32:52 GMT-0700 2011"/>
+</session>
+
+<session>
+<session><sessionTime startTime="Wed Feb 23 21:16:53 GMT-0600 2011" playDuration="0.07" finishTime="Wed Feb 23 21:16:57 GMT-0600 2011"/>
+</session>

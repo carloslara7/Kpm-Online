@@ -1,0 +1,25 @@
+
+<LOG>
+  <creationdate>Mon Jan 31 10:52:48 GMT-0700 2011</creationdate>
+  <UID>000000005</UID>
+  <FIRST_NAME>Tiffany</FIRST_NAME>
+  <LAST_NAME>Weston</LAST_NAME>
+</LOG>
+<session>
+<bubble game_id="G2" bubbleName="IdentifyColor" bubbleLevel="1" start="2011-0-01T10:52:54" bubbleStatus="Passed" numAttempts="3" globalScore="3.4609" scoreToEnjoy="-2.4495" scoreToComplete="2.4495" bubbleDuration="4.75" accompanied="true" passCounter="2" failCounter="0" enjoyedCounter="0">
+  <task shapeAttempts="0" success="true" taskScore="0.8452" globalScore="0.8452" time="4.75" timeFirstMove="4.75" goal="Yellow" badMoveCounter="0" numberOfObjects="6" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.8165" globalScore="1.6617" time="0" timeFirstMove="0" goal="Blue" badMoveCounter="0" numberOfObjects="5" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.7746" globalScore="2.4363" time="0" timeFirstMove="0" goal="Red" badMoveCounter="0" numberOfObjects="4" numberOfGoal="1"/>
+  <task shapeAttempts="0" success="true" taskScore="0.4472" globalScore="2.8835" time="0" timeFirstMove="0" goal="Orange" badMoveCounter="0" numberOfObjects="3" numberOfGoal="2"/>
+  <task shapeAttempts="0" success="true" taskScore="0.5774" globalScore="3.4609" time="0" timeFirstMove="0" goal="Green" badMoveCounter="0" numberOfObjects="2" numberOfGoal="1"/>
+  <bubble_status_changed id="IdentifyColor_1" Status="false" LastOutcome="Passed"/>
+</bubble>
+
+<session>
+<session><sessionTime startTime="Tue Feb 15 12:38:38 GMT-0700 2011" playDuration="0.12" finishTime="Tue Feb 15 12:38:45 GMT-0700 2011"/>
+</session>
+
+<session>
+<session>
+<session><sessionTime startTime="Wed Feb 23 21:14:55 GMT-0600 2011" playDuration="0.05" finishTime="Wed Feb 23 21:14:58 GMT-0600 2011"/>
+</session>
