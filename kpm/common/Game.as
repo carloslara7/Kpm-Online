@@ -1,11 +1,12 @@
-/******************************************
+﻿/******************************************
 /* Author : Carlos Lara 
 /* variables : 
 /* m: member, p: parameters, t : timeline
 /*****************************************/
 
 package com.kpm.common {
-	import flash.display.MovieClip;
+
+import flash.display.MovieClip;
 	import flash.events.Event;
 import flash.events.MouseEvent;
 import flash.ui.Mouse;
@@ -16,6 +17,7 @@ public class Game extends MovieClip{
 		protected var mData	 			: GameData;
         protected var clickedTarget   : MovieClip;
 
+
         public static var parametersPanel : MovieClip;
 
         public function Game() {
@@ -25,12 +27,26 @@ public class Game extends MovieClip{
 
         public function addParameterPanelAndEvent(pAdd : Boolean,  pFunc : Function, pX : int, pY : int)
         {
+            Util.debug("addParameterPanel");
+
             if(!parametersPanel)
             {
                 parametersPanel = Util.createMc("parametersPanel");
+
                 addChild(parametersPanel);
+
                 parametersPanel.x = pX;
+
                 parametersPanel.y = pY;
+
+                GameData.parameters = new Array();
+
+                for(var i=0; i < 7; i ++)
+                {
+                    GameData.parameters.push((parametersPanel["p" + i]).text);
+                    Util.debug("adding parameter " + GameData.parameters[i]);
+                }
+
             }
 
             if(pAdd)

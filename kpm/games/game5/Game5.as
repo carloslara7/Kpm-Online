@@ -42,8 +42,6 @@ public class Game5 extends Game {
 
     //*current bubble being played
     private var mBubbleId : BubbleId;
-    //*default language
-    private const DEFAULT_LANGUAGE: String = "SPA";
     //*whether music is muted or not
     private var mMute: Boolean = true;
 
@@ -96,10 +94,11 @@ public class Game5 extends Game {
         else mBubbleId = pBubbleId;
 
 
-        if(pLanguage == null) pLanguage = ELanguage.SPA;
+        if(pLanguage == null) pLanguage = ELanguage.ENG;
 
         //initialize GameData : which is the interface with the Driver
         mData = new Game5Data(mBubbleId, pLanguage, this, EGameCharacter.ALL);
+
 
         startGame();
     }
@@ -108,7 +107,7 @@ public class Game5 extends Game {
         //Esto se hace para dejar que flash renderise todos los elementos del stage y luego inicializar plataformas y demas
         //this.gotoAndStop("background" + mPlayerWord + changePlusString)
 
-        stage.addEventListener( Event.RENDER, populatePlatforms, false, 0, true );
+        stage.addEventListener( Event.RENDER, startGameHelper, false, 0, true );
         stage.invalidate();
 
         Util.debug("start game");
@@ -118,12 +117,10 @@ public class Game5 extends Game {
 
     //$populate platforms (branches, wires)
     //store col points in board (2d array)
-    public function populatePlatforms(e : Event){
-        Util.debug("Game5.PopulatePlatforms");
-        stage.removeEventListener( Event.RENDER, populatePlatforms);
-        tInteractionPanel.visible = true;
-        setupPiecesAndWholes()
-
+    public function startGameHelper(e : Event){
+        Util.debug("Game5.StartGameHelper");
+        G5Data.initializeParameters();
+        initializePath();
         startRound();
     }
 
@@ -141,15 +138,22 @@ public class Game5 extends Game {
 
 
 
-    //$Start round/task
+    //$Start AudioVisualTask
+
     private function startRound(event: Event = null) {
         Util.debug("Game5.startRound");
-        // Instructions
-        // G5Data.soundLibrary.playLibSound(ESoundType.Instruction, "1", G5Data.Language, EGame.G5,null, G5Data.Bubble.Name.Standard.Text);
-        setCounters();
+        // Instructions Sound
+        G5Data.soundLibrary.playLibSound(ESoundType.Instruction, "1", G5Data.Language, null,null, G5Data.Bubble.Name.Standard);
+
+        tInteractionPanel.visible = true;
+        populateCounters();
+        addCounterEvents(true);
+
+
+
     }
 
-    private function setupPiecesAndWholes()
+    private function initializePath()
     {
         Util.debug("Game5.setupPiecesAndWholes");
 
@@ -223,85 +227,21 @@ public class Game5 extends Game {
         return G5Data.mGameObjects[index];
     }
 
-
-
-
-
-    //$Set counters
-    //give answer + 4 distractors (distractors should be within 3 of range)
-    //example : if answer is 21, possible distractors are 18 - 24
-    private function setCounters(){
-
-
-        //Assert("I dont need to remove counters because when task is succeded no counters are found inside the InteractionPanel = mAnswerBox
-        //removeCounters();
-        //var numArray  : Array = Util.generateConsecutiveNumbersAround(G4Data.gameGoal.currentGoal as Number, G4Data.maxNumGoals);
-        populateCounters();
-        addCounterEvents(true);
-
-    }
-
     private function populateCounters()
     {
 
         Util.debug("Game5.setupCounters");
+        //Util.printArray(G5Data.mAnswerBoxCounters);
+
         G5Data.mAnswerBoxCounters = new Array(G5Data.mpNumAnswersToChoose);
-
-
-        Util.printArray(G5Data.mAnswerBoxCounters);
 
         for (var i=0; i < G5Data.mAnswerBoxCounters.length && i < G5Data.mWholes.length ; i++){
             //Create counter
             //Util.debug("create counter " + i + " " + numArray);
 
-            var counter : Counter = new Counter(Counter.getNumberForm(mBubbleId), getRandomWholeNumeral(), stage);
-
-            G5Data.mAnswerBoxCounters[i] = new GameComponent();
-            G5Data.mAnswerBoxCounters[i].MovieName = "BoxCoverGray";
-            G5Data.mAnswerBoxCounters[i].addMovieClip(counter, false, -40);
-
-            Util.debug("Creating counter "  + G5Data.mAnswerBoxCounters[i].secondMovie.numeral);
-            G5Data.mAnswerBoxCounters[i].feedbackSound = ENumber.getEnum(G5Data.mAnswerBoxCounters[i].secondMovie.numeral).Text;
-            //G5Data.mAnswerBoxCounters[i].Movie.visible = false;
-
-            G5Data.mAnswerBoxCounters[i].x = Game5Data.ANSWER_BOX_POSITION[Util.INDEX_X] + (i* 100);
-            G5Data.mAnswerBoxCounters[i].y = Game5Data.ANSWER_BOX_POSITION[Util.INDEX_Y];
+            G5Data.newCounter(i, stage);
             addChild(G5Data.mAnswerBoxCounters[i]);
         }
-    }
-
-    public function getRandomWholeNumeral()
-    {
-        var nextWholeNumeral : int =  G5Data.mWholes.pop();
-
-
-        Util.debug("G5.getRandomeWHoleNumeral" + nextWholeNumeral)
-        Util.printArray(G5Data.mWholes);
-
-
-        return nextWholeNumeral;
-
-
-//        var wholeIndex : int = 0 ;
-//
-//        for (var i=0; i< G5Data.mNodes.length; i++)
-//        {
-//            Util.debug("compare2");
-//            Util.printObject(G5Data.mNodes[i]);
-//            Util.debug(" ");
-//        }
-//
-//        do
-//        {
-//            wholeIndex = Util.getRandBtw(0, G5Data.mNodes.length-1);
-//        }
-//        while(!G5Data.mNodes[wholeIndex].whole);
-//
-//        //Util.printArray(["wholeIndex :",wholeIndex,"] [filled : ", mPieces[wholeIndex].filled, "] [index : ", mPieces[wholeIndex].index, "]"], "Game5.mPieces");
-//
-//
-//
-//        return G5Data.mNodes[wholeIndex].numeral;
     }
 
 
@@ -447,15 +387,20 @@ public class Game5 extends Game {
     function tryAgainSound()
     {
         Util.debug("Game5.tryAgainSound" + clickedTarget.feedbackSound);
+
         G5Data.firstTry = false;
+
         G5Data.soundLibrary.forceStop();
 
 
         if(	G5Data.gameGoal.quality == EGoal.PLACE_NUMBER)
         {
             G5Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.BAD_MOVE);
+
             G5Data.soundLibrary.playLibSound(ESoundType.Feedback, "Silence1");
+
             G5Data.soundLibrary.playLibSound(ESoundType.FeedbackClick, clickedTarget.feedbackObject, G5Data.Language, null, null, null, GameData.FEEDBACK_FINISHED);
+
             G5Data.feedbackSound = clickedTarget.feedbackObject+"";
         }
     }
