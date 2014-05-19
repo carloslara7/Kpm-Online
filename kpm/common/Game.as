@@ -5,16 +5,40 @@
 /*****************************************/
 
 package com.kpm.common {
-	import com.kpm.kpm.BubbleId;
 	import flash.display.MovieClip;
-	import flash.events.Event;	
+	import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.ui.Mouse;
 
 
-	public class Game extends MovieClip{
+public class Game extends MovieClip{
 		
-		protected var mData	 			: GameData;	
-		
-		public function Game() {}
+		protected var mData	 			: GameData;
+        protected var clickedTarget   : MovieClip;
+
+        public static var parametersPanel : MovieClip;
+
+        public function Game() {
+
+
+        }
+
+        public function addParameterPanelAndEvent(pAdd : Boolean,  pFunc : Function, pX : int, pY : int)
+        {
+            if(!parametersPanel)
+            {
+                parametersPanel = Util.createMc("parametersPanel");
+                addChild(parametersPanel);
+                parametersPanel.x = pX;
+                parametersPanel.y = pY;
+            }
+
+            if(pAdd)
+                EventManager.addEvent(parametersPanel.tGoButton, MouseEvent.CLICK, pFunc);
+            else
+                EventManager.removeEvent(parametersPanel.tGoButton, MouseEvent.CLICK);
+
+        }
 	
 		public function onBubbleFinished(e:Event)
 		{
@@ -25,7 +49,8 @@ package com.kpm.common {
 		}
 		
 		public function onInstructionsFinished(e: Event) {}
-		public function createMusic() : KpmSound 
+
+        public function createMusic() : KpmSound
 		{
 			return null;
 		}
