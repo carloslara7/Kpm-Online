@@ -28,6 +28,8 @@ import com.kpm.kpm.BubbleId;
 import com.kpm.kpm.EBName;
 import com.kpm.kpm.EBStd;
 
+import flash.display.DisplayObject;
+
 import flash.display.MovieClip;
 import flash.display.MovieClip;
 import flash.events.Event;
@@ -43,7 +45,7 @@ public class Game5 extends Game {
     //*current bubble being played
     private var mBubbleId : BubbleId;
     //*whether music is muted or not
-    private var mMute: Boolean = true;
+    private var mMute: Boolean = false;
 
     //Whole_id
     //Piece_id
@@ -74,17 +76,17 @@ public class Game5 extends Game {
 
         //Define player kind (monkey or bird)
         /*if(pPlayerTheme == null)
-        {
-            mPlayerKind = CharQual.MONKEY;
-            mPlayerChar = EGameCharacter.Monkey;
-        }
-        else if (pPlayerTheme == EGameCharacter.Monkey)
-            mPlayerKind = CharQual.MONKEY;
-        else if (pPlayerTheme == EGameCharacter.Bird)
-            mPlayerKind = CharQual.BIRD;
+         {
+         mPlayerKind = CharQual.MONKEY;
+         mPlayerChar = EGameCharacter.Monkey;
+         }
+         else if (pPlayerTheme == EGameCharacter.Monkey)
+         mPlayerKind = CharQual.MONKEY;
+         else if (pPlayerTheme == EGameCharacter.Bird)
+         mPlayerKind = CharQual.BIRD;
 
-        mPlayerKind = CharQual.BIRD; //SOLO PARA TESTING
-        mPlayerWord = CharQual.SPECIES_NAMES[mPlayerKind];
+         mPlayerKind = CharQual.BIRD; //SOLO PARA TESTING
+         mPlayerWord = CharQual.SPECIES_NAMES[mPlayerKind];
          */
 
         Util.debug("Game5.initGame" + pBubbleId + " " + mBubbleId);
@@ -99,7 +101,6 @@ public class Game5 extends Game {
         //initialize GameData : which is the interface with the Driver
         mData = new Game5Data(mBubbleId, pLanguage, this, EGameCharacter.ALL);
 
-
         startGame();
     }
 
@@ -109,17 +110,15 @@ public class Game5 extends Game {
 
         stage.addEventListener( Event.RENDER, startGameHelper, false, 0, true );
         stage.invalidate();
-
-        Util.debug("start game");
-        Util.debug(stage) ;
-        Util.debug(parent.stage);
     }
 
     //$populate platforms (branches, wires)
     //store col points in board (2d array)
     public function startGameHelper(e : Event){
         Util.debug("Game5.StartGameHelper");
-        G5Data.initializeParameters();
+        onRemove(null);
+        initializeParameters()
+        G5D.outputParameters();
         initializePath();
         startRound();
     }
@@ -128,64 +127,73 @@ public class Game5 extends Game {
     public override function createMusic() : KpmSound {
         Util.debug("Game5.createMusic");
         if(!mMute)
-            return G5Data.createSound("backgroundMusicbird", 1, 0.7, true, false, true);
+            return G5D.createSound("backgroundMusicbird", 1, 0.7, true, false, true);
         else return null;
     }
 
     public function get Name()		: EGame		{ return EGame.G5;}
     public override function get Data()  		{ return (mData as Game5Data)};
-    public function get G5Data() : Game5Data	{ return (mData as Game5Data)}
+    public function get G5D() : Game5Data	{ return (mData as Game5Data)}
 
 
+    private function initializeParameters()
+    {
+        var numParameters : int = 9;
 
-    //$Start AudioVisualTask
+        if(!parent || !parent[GameData.PARAMETER_PANEL])
+            throw("no parameter panel");
 
-    private function startRound(event: Event = null) {
-        Util.debug("Game5.startRound");
-        // Instructions Sound
-        G5Data.soundLibrary.playLibSound(ESoundType.Instruction, "1", G5Data.Language, null,null, G5Data.Bubble.Name.Standard);
+        parent[GameData.PARAMETER_PANEL].x = 1200;
 
-        tInteractionPanel.visible = true;
-        populateCounters();
-        addCounterEvents(true);
+        parent[GameData.PARAMETER_PANEL].y = 600;
 
+        GameData.parameters = new Array(numParameters);
 
-
+        for(var i=0; i < numParameters; i ++)
+        {
+            GameData.parameters[i] = parent[GameData.PARAMETER_PANEL]["p" + i].text;
+            Util.debug("GameData.parameters " + i + " " + GameData.parameters[i]);
+        }
     }
+
+    public override function onRemove(e : Event)
+    {
+        Util.removeListofMc(G5D.mGameObjects);
+        Util.removeListofMc(G5D.mAnswerBoxCounters);
+
+        G5D.onRemove(e);
+    }
+
 
     private function initializePath()
     {
         Util.debug("Game5.setupPiecesAndWholes");
 
         Util.debug("PARAMETERS : ");
-        Util.debug("first number" + G5Data.mpPathInitialValue);
-        Util.debug("number of total nodes " + G5Data.mpNumTotalNodesInPath);
-        Util.debug("G5Data.numAnswersToChoose" + G5Data.mpNumAnswersToChoose);
-
+        Util.debug("first number" + GameData.parameters[G5D.mpPathInitialValue]);
+        Util.debug("number of total nodes " + GameData.parameters[G5D.mpNumTotalNodesInPath]);
+        Util.debug("G5Data.numAnswersToChoose" +  GameData.parameters[G5D.mpNumAnswersToChoose]);
 
         var numNodesAssigned : int;
 
-        while(numNodesAssigned < G5Data.mpNumTotalNodesInPath)
+        while(numNodesAssigned < GameData.parameters[G5D.mpNumTotalNodesInPath])
         {
-            numNodesAssigned += G5Data.addNodesToPath(G5Data.generateGroup(numNodesAssigned, EG5PieceType.PIECE, Util.getRandBtw(G5Data.mpMinRandomNumAdjacentPieces, G5Data.mpMaxRandomNumAdjacentPieces)));
-            numNodesAssigned += G5Data.addNodesToPath(G5Data.generateGroup(numNodesAssigned, EG5PieceType.WHOLE, Util.getRandBtw(G5Data.mpMinRandomNumAdjacentWholes, G5Data.mpMaxRandomNumAdjacentWholes)));
+            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.PIECE, Util.getRandBtw(GameData.parameters[G5D.mpMinRandomAdjacentPieces], GameData.parameters[G5D.mpMaxRandomNumAdjacentPieces])));
+            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.WHOLE, Util.getRandBtw(GameData.parameters[G5D.mpMinRandomNumAdjacentWholes], GameData.parameters[G5D.mpMaxRandomNumAdjacentWholes])));
         }
 
 
-        while(G5Data.mNodes.length != G5Data.mpNumTotalNodesInPath)
-            G5Data.mNodes.pop();
+        while(G5D.mNodes.length != GameData.parameters[G5D.mpNumTotalNodesInPath])
+            G5D.mNodes.pop();
 
-        if(G5Data.mNodes.length != G5Data.mpNumTotalNodesInPath)
-            Util.assertFailed(["not same", "G5Data.mNodes length : ", G5Data.mNodes.length,  "numTotalNodes : ", G5Data.mpNumTotalNodesInPath]);
+        if(G5D.mNodes.length != GameData.parameters[G5D.mpNumTotalNodesInPath])
+            Util.assertFailed(["not same", "G5Data.mNodes length : ", G5D.mNodes.length,  "numTotalNodes : ", GameData.parameters[G5D.mpNumTotalNodesInPath]]);
 
 
-        for (var i = 0; i< G5Data.mpNumTotalNodesInPath; i++)
+        for (var i = 0; i< GameData.parameters[G5D.mpNumTotalNodesInPath]; i++)
         {
-            addChild(addToGameObjects(G5Data.mNodes[i], i));
+            addChild(addToGameObjects(G5D.mNodes[i], i));
         }
-
-
-
     }
 
     public function addToGameObjects(pNode : Object, index : int) : MovieClip
@@ -196,51 +204,76 @@ public class Game5 extends Game {
         {
             Util.printArray(["numeral ", pNode.numeral], "G5.addToGameObjects.addWhole");
 
-            G5Data.mGameObjects.push(Util.createMc("BoxWhole"));
+            G5D.mGameObjects.push(Util.createMc("BoxWhole"));
 
-            G5Data.mWholes.push(G5Data.mNodes[index].numeral);
+            G5D.mWholes.push(G5D.mNodes[index].numeral);
 
         }
         else
         {
             Util.printArray(["numeral ", pNode.numeral], "G5.addToGameObjects.addPiece");
 
-            G5Data.mGameObjects.push(new GameComponent());
+            G5D.mGameObjects.push(new GameComponent());
 
-            G5Data.mGameObjects[index].MovieName = "BoxCoverGray";
+            G5D.mGameObjects[index].MovieName = "BoxCoverGray";
 
-            G5Data.colorPiece(G5Data.mGameObjects[index], EColor.Blue);
+            G5D.colorPiece(G5D.mGameObjects[index], EColor.Blue);
 
-            counter = new Counter(Counter.getNumberForm(mBubbleId), G5Data.mNodes[index].numeral, stage);
-            G5Data.mGameObjects[index].addMovieClip(counter, false, -40);
+            counter = new Counter(Counter.getNumberForm(mBubbleId), G5D.mNodes[index].numeral, stage);
+            G5D.mGameObjects[index].addMovieClip(counter, false, -40);
 
         }
 
-        G5Data.mGameObjects[index].x = this["tPath"]["loc"+(index+1)].x + this["tPath"].x;
-        G5Data.mGameObjects[index].y = this["tPath"]["loc"+(index+1)].y + this["tPath"].y;
+        G5D.mGameObjects[index].x = this["tPath"]["loc"+(index+1)].x + this["tPath"].x;
+        G5D.mGameObjects[index].y = this["tPath"]["loc"+(index+1)].y + this["tPath"].y;
 
-        addChild(G5Data.mGameObjects[index]);
 
-        if(G5Data.mGameObjects.length != index+1)
-            Util.assertFailed(["Game5.addGameObjects", "not same", "G5Data.mGameObjects.length-1 :: index", "|", G5Data.mNodes.length, " :: ", index]);
+        switch(GameData.parameters[G5D.mpOrder])
+        {
+            case 1 : G5D.mWholes.reverse(); break;
+            case 0 : Util.shuffleArray(G5D.mWholes); break;
+        }
 
-        return G5Data.mGameObjects[index];
+
+        //if(G5Data.mGameObjects.length != index+1)
+        //    Util.assertFailed(["Game5.addGameObjects", "not same", "G5Data.mGameObjects.length-1",(G5Data.mGameObjects.length-1), "G5Data.mNodes.length",G5Data.mNodes.length, "index", index]);
+
+        return G5D.mGameObjects[index];
+    }
+
+
+    //////////////END POPULATE PIECES AND WHOLES
+
+
+    //$Start AudioVisualTask
+    private function startRound(event: Event = null) {
+        Util.debug("Game5.startRound");
+        // Instructions Sound
+        G5D.soundLibrary.playLibSound(ESoundType.Instruction, "1", G5D.Language, null,null, G5D.Bubble.Name.Standard);
+
+        tInteractionPanel.visible = true;
+        populateCounters();
+        addCounterEvents(true);
+
+
+
     }
 
     private function populateCounters()
     {
 
-        Util.debug("Game5.setupCounters");
-        //Util.printArray(G5Data.mAnswerBoxCounters);
+        Util.printArray([GameData.parameters[G5D.mpNumAnswersToChoose], G5D.mWholes.length ], "Game5.setupCounters");
 
-        G5Data.mAnswerBoxCounters = new Array(G5Data.mpNumAnswersToChoose);
 
-        for (var i=0; i < G5Data.mAnswerBoxCounters.length && i < G5Data.mWholes.length ; i++){
+        G5D.mAnswerBoxCounters = new Array(GameData.parameters[G5D.mpNumAnswersToChoose]);
+
+        for (var i=0; i < GameData.parameters[G5D.mpNumAnswersToChoose] && i < G5D.mWholes.length ; i++){
             //Create counter
-            //Util.debug("create counter " + i + " " + numArray);
 
-            G5Data.newCounter(i, stage);
-            addChild(G5Data.mAnswerBoxCounters[i]);
+            G5D.newCounter(i, G5D.mWholes.pop(), stage);
+            Util.debug("create counter " + i + G5D.mAnswerBoxCounters[i]);
+
+            addChild(G5D.mAnswerBoxCounters[i]);
         }
     }
 
@@ -249,21 +282,21 @@ public class Game5 extends Game {
     //*Add or remove events for counter
     private function addCounterEvents (pAdd : Boolean) {
         Util.debug("add counter events " + pAdd)
-        for(var i: Number = 0; i < G5Data.mAnswerBoxCounters.length; i++){
-            if(G5Data.mAnswerBoxCounters[i] != null){
+        for(var i: Number = 0; i < G5D.mAnswerBoxCounters.length; i++){
+            if(G5D.mAnswerBoxCounters[i] != null){
                 if (pAdd) {
-                    EventManager.addEvent(G5Data.mAnswerBoxCounters[i], MouseEvent.MOUSE_UP, onGCDrag, i);
+                    EventManager.addEvent(G5D.mAnswerBoxCounters[i], MouseEvent.MOUSE_UP, onGCDrag, i);
 
-                    G5Data.mAnswerBoxCounters[i].buttonMode = true;
-                    G5Data.mAnswerBoxCounters[i].index = i;
-                    if(GameData.driver) CursorManager.addOverEvents(G5Data.mAnswerBoxCounters[i]);
+                    G5D.mAnswerBoxCounters[i].buttonMode = true;
+                    G5D.mAnswerBoxCounters[i].index = i;
+                    if(GameData.driver) CursorManager.addOverEvents(G5D.mAnswerBoxCounters[i]);
                 }
                 else {
                     Util.debug("removing events");
-                    EventManager.removeEvent(G5Data.mAnswerBoxCounters[i], MouseEvent.MOUSE_UP);
-                    EventManager.removeEvent(G5Data.mAnswerBoxCounters[i], MouseEvent.MOUSE_DOWN);
-                    G5Data.mAnswerBoxCounters[i].buttonMode = false;
-                    if(GameData.driver) CursorManager.removeOverEvents(G5Data.mAnswerBoxCounters[i]);
+                    EventManager.removeEvent(G5D.mAnswerBoxCounters[i], MouseEvent.MOUSE_UP);
+                    EventManager.removeEvent(G5D.mAnswerBoxCounters[i], MouseEvent.MOUSE_DOWN);
+                    G5D.mAnswerBoxCounters[i].buttonMode = false;
+                    if(GameData.driver) CursorManager.removeOverEvents(G5D.mAnswerBoxCounters[i]);
                 }
             }
         }
@@ -280,56 +313,58 @@ public class Game5 extends Game {
         //  return;
 
         Util.debug("Game5.addEmptyBox to increase drag zone");
-        for(var i: Number = 0; i < G5Data.mAnswerBoxCounters.length; i++){
-            if(G5Data.mAnswerBoxCounters[i] != null)
+        for(var i: Number = 0; i < G5D.mAnswerBoxCounters.length; i++){
+            if(G5D.mAnswerBoxCounters[i] != null)
             {
                 //Util.debug("adding box" + i );
-                var emptyBox : MovieClip = Util.addButtonBox(G5Data.mAnswerBoxCounters[i], new EmptyBox())
-                var sizeY = G5Data.mAnswerBoxCounters[i].height;
+                var emptyBox : MovieClip = Util.addButtonBox(G5D.mAnswerBoxCounters[i], new EmptyBox())
+                var sizeY = G5D.mAnswerBoxCounters[i].height;
 
-                G5Data.mAnswerBoxCounters[i].addChild(emptyBox);
-                G5Data.mAnswerBoxCounters[i].setChildIndex(emptyBox, 0);
+                G5D.mAnswerBoxCounters[i].addChild(emptyBox);
+                G5D.mAnswerBoxCounters[i].setChildIndex(emptyBox, 0);
 
             }
         }
     }
 
+
+
     private function onGCDrag(e: Event, pIndex : int)
     {
         Util.debug("G5.onGCDrag");
-        EventManager.removeEvent(G5Data.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_UP);
-        G5Data.mAnswerBoxCounters[pIndex].drag();
+        EventManager.removeEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_UP);
+        G5D.mAnswerBoxCounters[pIndex].drag();
 
-        EventManager.addEvent(G5Data.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_DOWN, onGCDrop, G5Data.mAnswerBoxCounters[pIndex]);
+        EventManager.addEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_DOWN, onGCDrop, G5D.mAnswerBoxCounters[pIndex]);
     }
 
-    private function onGCDrop(e : Event, pAnswer_Counter : GameComponent)
+    private function onGCDrop(e : Event, pAnswerCounter : GameComponent)
     {
-        if(!pAnswer_Counter.Dragging) return;
+        if(!pAnswerCounter.Dragging) return;
 
         var intersectionIndex : int = -1;
-        EventManager.removeEvent(pAnswer_Counter,  MouseEvent.MOUSE_UP);
+        EventManager.removeEvent(pAnswerCounter,  MouseEvent.MOUSE_UP);
 
-        Util.debug("G5onGCDrop.pNode.pDragging" + pAnswer_Counter.Dragging);
+        Util.debug("G5onGCDrop.pNode.pDragging" + pAnswerCounter.Dragging);
 
-        if(pAnswer_Counter.Dragging)
+        if(pAnswerCounter.Dragging)
         {
             //addChild(Util.createAndPositionMc("dot", pAnswer_Counter.x,  pAnswer_Counter.y));
 
-            var i;
-            for(i=0; i < G5Data.mNodes.length ; i++){
+            var i; for(i=0; i < G5D.mNodes.length ; i++){
 
-                Util.printArray(["i : ", i,  "G5Data.mNodes[i].Numeral: ", G5Data.mNodes[i].numeral, "intersect ", G5Data.mGameObjects[i].hitTestPoint(mouseX, mouseY, true), "G5Data.mNodes[i].whole : ", G5Data.mNodes[i].whole], "G5.OnGCDrop.intersect???")
+                Util.printArray(["i : ", i,  "G5Data.mNodes[i].Numeral: ", G5D.mNodes[i].numeral, "intersect ", G5D.mGameObjects[i].hitTestPoint(mouseX, mouseY, true), "G5Data.mNodes[i].whole : ", G5D.mNodes[i].whole], "G5.OnGCDrop.intersect???")
+
+                if(G5D.mGameObjects[i] && G5D.mNodes[i].whole &&
+                   G5D.mGameObjects[i].hitTestPoint(pAnswerCounter.x, pAnswerCounter.y, true)){
+
+                    intersectionIndex = i; break;
+
+                    Util.printArray(["G5Data.mNodes[i].Numeral", G5D.mNodes[i].numeral, "intersect ", G5D.mGameObjects[i].hitTestPoint(pAnswerCounter.x, pAnswerCounter.y, true)], "G5OnGCDrop.intersect!!!")
 
 
-                if(G5Data.mGameObjects[i]
-                && G5Data.mNodes[i].whole
-                && G5Data.mGameObjects[i].hitTestPoint(pAnswer_Counter.x, pAnswer_Counter.y, true))
-                {
-                    Util.printArray(["G5Data.mNodes[i].Numeral", G5Data.mNodes[i].numeral, "intersect ", G5Data.mGameObjects[i].hitTestPoint(pAnswer_Counter.x, pAnswer_Counter.y, true)], "G5OnGCDrop.intersect!!!")
-                    intersectionIndex = i;
-                    break;
                 }
+
                 //DEBUG : Util.printArray(["G5onGCDrop.intersectionIndex",i]);Util.printArray(["G5Data.mNodes[i].numeral", G5Data.mNodes[i].numeral]);Util.printArray(["pNode.numeral",pNode.numeral]);
             }
 
@@ -337,71 +372,92 @@ public class Game5 extends Game {
 
             if(intersectionIndex != -1)
             {
-                if(G5Data.mNodes[intersectionIndex].numeral == pAnswer_Counter.secondMovie.numeral)
+                if(G5D.mNodes[intersectionIndex].numeral == pAnswerCounter.secondMovie.numeral)
                 {
-                    Util.printArray(["intersect cardinality matches index ", intersectionIndex],"Game5.onGCDrop");
-                    Util.removeChild(G5Data.mGameObjects[intersectionIndex]);
-                    G5Data.mNodes[intersectionIndex].whole = false;
-                    pAnswer_Counter.drop();
-                    pAnswer_Counter.x = G5Data.mGameObjects[intersectionIndex].x;
-                    pAnswer_Counter.y = G5Data.mGameObjects[intersectionIndex].y;
-                    G5Data.colorPiece(pAnswer_Counter, EColor.Blue);
-                    pAnswer_Counter.done = true;
+                    collideSuccess(intersectionIndex, pAnswerCounter);
 
-                    G5Data.CurrentTaskSuccess = GameData.TASK_SUCCESS;
-                    G5Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_MOVE, G5Data.Language);
-
-
-                    var readyToStartRound : Boolean = true;
-
-                     for each (var counter : GameComponent in G5Data.mAnswerBoxCounters)
-                        if(!counter.done) readyToStartRound = false;
-
-                    if(readyToStartRound)
-                        startRound();
-
+                    checkStartRound();
                 }
                 else
                 {
-                    pAnswer_Counter.drop();
-
-                    pAnswer_Counter.returnToHoldPosition();
-
-                    clickedTarget = new MovieClip();
-                    clickedTarget.feedbackObject = G5Data.mNodes[intersectionIndex].numeral ;
-
-                    Util.debug("onGCDrop.intersect cardinality doesnt match" + clickedTarget.feedbackObject + " " + ENumber.getEnum(clickedTarget.feedbackObject).Text + " " + clickedTarget.feedbackSound);
-
-                    EventManager.addEvent(pAnswer_Counter, MouseEvent.MOUSE_UP, onGCDrag, pAnswer_Counter.index)
-
-                    G5Data.CurrentTaskSuccess = GameData.TASK_FAILURE;
+                    collideFailure(intersectionIndex, pAnswerCounter);
 
                     tryAgainSound();
-
-
                 }
             }
         }
+    }
+
+
+
+    function collideSuccess(intersectionIndex : int,  pAnswerCounter : GameComponent)
+    {
+        Util.printArray(["intersect cardinality matches index ", intersectionIndex],"Game5.onGCDrop");
+
+        Util.removeChild(G5D.mGameObjects[intersectionIndex]);
+
+        G5D.mNodes[intersectionIndex].whole = false;
+
+        pAnswerCounter.drop();
+        pAnswerCounter.x = G5D.mGameObjects[intersectionIndex].x;
+        pAnswerCounter.y = G5D.mGameObjects[intersectionIndex].y;
+        G5D.colorPiece(pAnswerCounter, EColor.Blue);
+        pAnswerCounter.done = true;
+
+        G5D.CurrentTaskSuccess = GameData.TASK_SUCCESS;
+        G5D.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_MOVE, G5D.Language);
+    }
+
+
+
+    function collideFailure(intersectionIndex : int, pAnswerCounter : GameComponent)
+    {
+
+        pAnswerCounter.drop();
+
+        pAnswerCounter.returnToHoldPosition();
+
+        clickedTarget = new MovieClip();
+        clickedTarget.feedbackObject = G5D.mNodes[intersectionIndex].numeral ;
+
+        Util.debug("onGCDrop.intersect cardinality doesnt match" + clickedTarget.feedbackObject + " " + ENumber.getEnum(clickedTarget.feedbackObject).Text + " " + clickedTarget.feedbackSound);
+
+        EventManager.addEvent(pAnswerCounter, MouseEvent.MOUSE_UP, onGCDrag, pAnswerCounter.index)
+
+        G5D.CurrentTaskSuccess = GameData.TASK_FAILURE;
+    }
+
+
+    function checkStartRound()
+    {
+        var readyToStartRound : Boolean = true;
+
+        for each (var counter : GameComponent in G5D.mAnswerBoxCounters)
+            if(!counter.done) readyToStartRound = false;
+
+        if(readyToStartRound)
+            startRound();
+
     }
 
     function tryAgainSound()
     {
         Util.debug("Game5.tryAgainSound" + clickedTarget.feedbackSound);
 
-        G5Data.firstTry = false;
+        G5D.firstTry = false;
 
-        G5Data.soundLibrary.forceStop();
+        G5D.soundLibrary.forceStop();
 
 
-        if(	G5Data.gameGoal.quality == EGoal.PLACE_NUMBER)
+        if(	G5D.gameGoal.quality == EGoal.PLACE_NUMBER)
         {
-            G5Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.BAD_MOVE);
+            G5D.soundLibrary.playLibSound(ESoundType.Feedback, EState.BAD_MOVE);
 
-            G5Data.soundLibrary.playLibSound(ESoundType.Feedback, "Silence1");
+            G5D.soundLibrary.playLibSound(ESoundType.Feedback, "Silence1");
 
-            G5Data.soundLibrary.playLibSound(ESoundType.FeedbackClick, clickedTarget.feedbackObject, G5Data.Language, null, null, null, GameData.FEEDBACK_FINISHED);
+            G5D.soundLibrary.playLibSound(ESoundType.FeedbackClick, clickedTarget.feedbackObject, G5D.Language, null, null, null, GameData.FEEDBACK_FINISHED);
 
-            G5Data.feedbackSound = clickedTarget.feedbackObject+"";
+            G5D.feedbackSound = clickedTarget.feedbackObject+"";
         }
     }
 
@@ -409,131 +465,37 @@ public class Game5 extends Game {
     //$Hide counters that are not the solution
     private function removeCounters(pGoalId = -1){
         Util.debug("removeCounters " + pGoalId);
-        if(!G5Data.mAnswerBoxCounters)
+        if(!G5D.mAnswerBoxCounters)
             return;
 
-        for(var i: Number = 0; i < G5Data.mAnswerBoxCounters.length; i++){
+        for(var i: Number = 0; i < G5D.mAnswerBoxCounters.length; i++){
 
             //Se deshabilita el counter que vino como parametro
-            EventManager.removeEvent(G5Data.mAnswerBoxCounters[i], MouseEvent.CLICK);
-            G5Data.mAnswerBoxCounters[i].buttonMode = false;
-            if(GameData.driver) CursorManager.removeOverEvents(G5Data.mAnswerBoxCounters[i]);
+            EventManager.removeEvent(G5D.mAnswerBoxCounters[i], MouseEvent.CLICK);
+            G5D.mAnswerBoxCounters[i].buttonMode = false;
+            if(GameData.driver) CursorManager.removeOverEvents(G5D.mAnswerBoxCounters[i]);
 
             if (i != pGoalId)
             {
-                Util.removeChild(G5Data.mAnswerBoxCounters[i]);
+                Util.removeChild(G5D.mAnswerBoxCounters[i]);
             }
 
 
 
         }
     }
-  }
+
+
+    //*Check if total tasks have been done
+    public function onTaskFinished(e : Event){
+
+        Util.debug(["G5Data.gameGoal.taskCounter", G5D.gameGoal.taskCounter, "G5Data.gameGoal.totalTasks", G5D.gameGoal.totalTasks], "OnTaskFinished");
+        if(G5D.gameGoal.taskCounter >= G5D.gameGoal.totalTasks)
+            this.gotoAndPlay(1);
+        else startRound();
+    }
 
 }
 
 
-
-/*
- var numPiecesPlacedSoFar : uint;
-
- for (var i=0; i < G5Data.mNodes.length ; i++)
- if(i%2)
- numPiecesOrWholesNow = Util.getRandBtw(minAdjacentPieces, maxAdjacentPieces);
- else
- numPiecesOrWholesNow = Util.getRandBtw(minAdjacentWholes, maxAdjacentWholes)
-
- numPiecesOrWholesSoFar += numPiecesOrWholes;
-
-
- if(G5Data.numTotalNodes > numPiecesPlacedSoFar)
- if(i%2)
- mAdjacentsPieces[i] = numPiecesOrWholesNow;
- else
- mAdjacentsWholes[i] = numPiecesOrWholesNow;
- else
- numPiecesOrWholesSoFar -= numPiecesOrWholesNow;
- piecesOrWholesNow = Util.getRandBtw(1, G5Data.numTotalNodes - numPiecesOrWholesSoFar);
- numPiecesPlacedSoFar += mAdjacentWholes[i];
- i++;
-
-
- //private function placeNodeInPath(pWhole : Boolean, i : int, j : int);
- //create movie clip
- //add it to path
-
-
-
- /*
-
-
- //Randomize positions for wholes and pieces
- var j : int = 0;
-
-
- for (var i = G5Data.mpPathInitialValue; i< G5Data.mpNumTotalNodesInPath + G5Data.mpPathInitialValue; i++)
- {
- G5Data.mNodes.push(new Object());
- G5Data.mNodes[j].whole = (i < (G5Data.mpNumTotalNodesInPath + G5Data.mpPathInitialValue));
- G5Data.mNodes[j].filled = false;
- G5Data.mNodes[j].index = j;
-
- //Util.debug("whole is true for " + i + " " + G5Data.mpNumTotalNodesInPath + locationIndeces[j].whole);
- j++;
-
-
- }
-
- G5Data.mNodes = Util.shuffleArray(G5Data.mNodes);
-
-
- for (var i = 0; i< G5Data.mpNumTotalNodesInPath; i++)
- {
-
- G5Data.mNodes[i].numeral = G5Data.mpPathInitialValue + i;
-
-
- if(G5Data.mNodes[i].whole)
- {
- Util.printArray(["numeral ", G5Data.mNodes[i].numeral], "G5.setupPiecesAndWholes.addWhole");
- G5Data.mGameObjects.push(Util.createMc("BoxWhole"));
- G5Data.mWholes.push(G5Data.mNodes[i].numeral);
-
- }
- else
- {
- Util.printArray(["numeral ", G5Data.mNodes[i].numeral], "G5.setupPiecesAndWholes.addPiece");
- G5Data.mNodes[i].whole = false;
-
- var counter : Counter = new Counter(Counter.getNumberForm(mBubbleId), i+1, stage);
-
- G5Data.mGameObjects.push(new GameComponent());
- G5Data.mGameObjects[i].MovieName = "BoxCoverGray";
- G5Data.mGameObjects[i].addMovieClip(counter, false, -40);
- G5Data.mGameObjects[i].ColorAll = EColor.Green;
-
- }
-
-
- G5Data.mGameObjects[i].x = this["tPath"]["loc"+(i+1)].x + this["tPath"].x;
- G5Data.mGameObjects[i].y = this["tPath"]["loc"+(i+1)].y + this["tPath"].y;
-
- addChild(G5Data.mGameObjects[i]);
-
- }
-
- for(var i =0 ; i < G5Data.mNodes.length ; i++)
- Util.printArray([i , G5Data.mNodes[i].numeral],"G5Data.mNodes[i].numeral");
-
- Util.debug("there are " + G5Data.mWholes.length + " wholes");
- Util.printArray(G5Data.mWholes);
- Util.debug("We shuffle G5Data.mWholes only if the level is > 3")
-
- if(mBubbleId.Level == 1)
- G5Data.mWholes = G5Data.mWholes.reverse();
-
- if(mBubbleId.Level >= 3)
- G5Data.mWholes = Util.shuffleArray(G5Data.mWholes);
-
-
- */
+}

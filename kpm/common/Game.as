@@ -17,44 +17,35 @@ public class Game extends MovieClip{
 		protected var mData	 			: GameData;
         protected var clickedTarget   : MovieClip;
 
-
-        public static var parametersPanel : MovieClip;
-
         public function Game() {
 
 
         }
+//
+//        public function addParameterPanelAndEvent(pAdd : Boolean,  pFunc : Function, pX : int, pY : int, pNumParameters : int)
+//        {//
+//            if(!GameData.parameters) GameData.parameters = new Array(pNumParameters);
+//
 
-        public function addParameterPanelAndEvent(pAdd : Boolean,  pFunc : Function, pX : int, pY : int)
-        {
-            Util.debug("addParameterPanel");
-
-            if(!parametersPanel)
-            {
-                parametersPanel = Util.createMc("parametersPanel");
-
-                addChild(parametersPanel);
-
-                parametersPanel.x = pX;
-
-                parametersPanel.y = pY;
-
-                GameData.parameters = new Array();
-
-                for(var i=0; i < 7; i ++)
-                {
-                    GameData.parameters.push((parametersPanel["p" + i]).text);
-                    Util.debug("adding parameter " + GameData.parameters[i]);
-                }
-
-            }
-
-            if(pAdd)
-                EventManager.addEvent(parametersPanel.tGoButton, MouseEvent.CLICK, pFunc);
-            else
-                EventManager.removeEvent(parametersPanel.tGoButton, MouseEvent.CLICK);
-
-        }
+//
+//            //Save the parameters
+//            for(var i=0; i < pNumParameters; i ++)
+//            {
+//
+//                //Util.debug("i " + i + "parametersPanel[p + i]" + parametersPanel["p" + i];
+//                GameData.parameters[i] = (parent.parametersPanel["p" + i]).text;
+//                Util.debug("GameData.parameters[i]" + GameData.parameters[i]);
+//
+//            }
+//
+//            if(pAdd)
+//                EventManager.addEvent(parent.parametersPanel.tGoButton, MouseEvent.CLICK, pFunc);
+//            else
+//                EventManager.removeEvent(parent.parametersPanel.tGoButton, MouseEvent.CLICK);
+//
+//
+//
+//        }
 	
 		public function onBubbleFinished(e:Event)
 		{

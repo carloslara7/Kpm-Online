@@ -4,15 +4,15 @@
     <list default="true" id="28646dbc-89a0-4c5d-aa34-f1e991443db9" name="Default" comment="prueba">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/common/Game.as" afterPath="$PROJECT_DIR$/kpm/common/Game.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/Game1.as" afterPath="$PROJECT_DIR$/kpm/games/Game1.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/Game2 copy 1.as" afterPath="$PROJECT_DIR$/kpm/games/Game2 copy 1.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/Game5.as" afterPath="$PROJECT_DIR$/kpm/games/game5/Game5.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/Game5Data.as" afterPath="$PROJECT_DIR$/kpm/games/game5/Game5Data.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/common/GameData.as" afterPath="$PROJECT_DIR$/kpm/common/GameData.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/common/Util.as" afterPath="$PROJECT_DIR$/kpm/common/Util.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Kpm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400523792834" ignored="false" />
+    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400628809755" ignored="false" />
     <file path="/a.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1369802563933" ignored="false" />
     <file path="/Game3.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379479510568" ignored="false" />
     <file path="/fragment.js2" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400382263825" ignored="false" />
@@ -23,7 +23,7 @@
     <file path="/Game4Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1376327116636" ignored="false" />
     <file path="/Game1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400543461171" ignored="false" />
     <file path="/Game1Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379479119584" ignored="false" />
-    <file path="/GameData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400528350846" ignored="false" />
+    <file path="/GameData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400557573527" ignored="false" />
     <file path="/Game2.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379476333292" ignored="false" />
     <file path="/Driver.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1397766232539" ignored="false" />
     <file path="/Game4Platforms.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1370490500143" ignored="false" />
@@ -48,7 +48,7 @@
     <file path="/AirImagePicker.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373479558874" ignored="false" />
     <file path="/Globals.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373560881309" ignored="false" />
     <file path="/Preloader.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374769821855" ignored="false" />
-    <file path="/Util.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399937729009" ignored="false" />
+    <file path="/Util.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400561238358" ignored="false" />
     <file path="/KidLoginPage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1393100678540" ignored="false" />
     <file path="/Game2Puzzle.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374213409662" ignored="false" />
     <file path="/Parser copy.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374429898702" ignored="false" />
@@ -104,13 +104,13 @@
     <file path="/ColorShortcuts.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391815322596" ignored="false" />
     <file path="/EBName.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399496001504" ignored="false" />
     <file path="/EBStd.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399337254118" ignored="false" />
-    <file path="/*.regexp" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400543435022" ignored="false" />
-    <file path="/Game5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400541559559" ignored="false" />
-    <file path="/Game5Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400538074009" ignored="false" />
+    <file path="/*.regexp" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400548853134" ignored="false" />
+    <file path="/Game5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400629963780" ignored="false" />
+    <file path="/Game5Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400629859641" ignored="false" />
     <file path="/EGoal.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399410992330" ignored="false" />
     <file path="/EGameCharacter.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399412657403" ignored="false" />
     <file path="/GameComponent.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400443451955" ignored="false" />
-    <file path="/Game.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400533362111" ignored="false" />
+    <file path="/Game.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400556714291" ignored="false" />
     <file path="/EG5PieceType.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400378613239" ignored="false" />
     <file path="/G5ns.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1400382343037" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,14 +177,17 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46930134">
+    <splitter split-orientation="horizontal" split-proportion="0.45165843">
       <split-first>
         <leaf>
-          <file leaf-file-name="Game5.as" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Game5.as" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="32" selection-start="538" selection-end="538" vertical-scroll-proportion="0.60881543">
-                  <folding />
+                <state line="230" column="0" selection-start="7253" selection-end="7432" vertical-scroll-proportion="0.5810811">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#188#218#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -219,7 +222,7 @@
           <file leaf-file-name="GameComponent.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="19" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+                <state line="21" column="32" selection-start="572" selection-end="585" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -237,10 +240,8 @@
           <file leaf-file-name="Game.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/Game.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="17" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-9.272727">
-                  <folding>
-                    <element signature="e#198#229#0" expanded="true" />
-                  </folding>
+                <state line="33" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -261,7 +262,7 @@
           <file leaf-file-name="Util.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/Util.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1018" column="36" selection-start="29572" selection-end="29572" vertical-scroll-proportion="0.0">
+                <state line="1025" column="45" selection-start="29723" selection-end="29737" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -276,10 +277,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game1.as" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Game1.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="97" column="74" selection-start="3115" selection-end="3115" vertical-scroll-proportion="0.33333334">
+                <state line="123" column="64" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -288,19 +289,35 @@
           <file leaf-file-name="Game1Data.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="187" column="31" selection-start="5320" selection-end="5334" vertical-scroll-proportion="-4.6538463">
+                <state line="187" column="31" selection-start="5320" selection-end="5334" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game5Data.as" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Game2.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/Game2.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="224" column="19" selection-start="6265" selection-end="6265" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game4.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/game4/Game4.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1837" column="18" selection-start="81779" selection-end="81779" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game5Data.as" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5Data.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="131" column="20" selection-start="3823" selection-end="3823" vertical-scroll-proportion="18.690908">
-                  <folding>
-                    <element signature="e#32#56#0" expanded="true" />
-                  </folding>
+                <state line="40" column="42" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.47297296">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -317,10 +334,8 @@
           <file leaf-file-name="GameData.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/GameData.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="175" column="45" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#126#152#0" expanded="true" />
-                  </folding>
+                <state line="175" column="36" selection-start="6299" selection-end="6309" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -372,22 +387,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/kpm/games/game5/Game51.as" />
-        <option value="$PROJECT_DIR$/kpm/common/EGoal.as" />
         <option value="$PROJECT_DIR$/kpm/games/EGameCharacter.as" />
         <option value="$PROJECT_DIR$/kpm/kpm/EBName.as" />
-        <option value="$PROJECT_DIR$/kpm/common/Util.as" />
         <option value="$PROJECT_DIR$/kpm/games/game5/EG5PieceType.as" />
         <option value="$PROJECT_DIR$/kpm/games/game5/G5ns.as" />
         <option value="$PROJECT_DIR$/kpm/common/Counter.as" />
         <option value="$PROJECT_DIR$/kpm/common/GameComponent.as" />
-        <option value="$PROJECT_DIR$/kpm/common/GameData.as" />
+        <option value="$PROJECT_DIR$/kpm/games/Game2 copy 1.as" />
+        <option value="$PROJECT_DIR$/kpm/games/Game2.as" />
+        <option value="$PROJECT_DIR$/kpm/games/Game1.as" />
+        <option value="$PROJECT_DIR$/kpm/games/Game1Data.as" />
+        <option value="$PROJECT_DIR$/kpm/games/game4/Game4.as" />
         <option value="$PROJECT_DIR$/kpm/common/Game.as" />
+        <option value="$PROJECT_DIR$/kpm/common/GameData.as" />
+        <option value="$PROJECT_DIR$/kpm/common/Util.as" />
         <option value="$PROJECT_DIR$/kpm/games/game5/Game5Data.as" />
         <option value="$PROJECT_DIR$/kpm/games/game5/Game5.as" />
-        <option value="$PROJECT_DIR$/kpm/games/Game1.as" />
-        <option value="$PROJECT_DIR$/kpm/games/Game2 copy 1.as" />
-        <option value="$PROJECT_DIR$/kpm/games/Game1Data.as" />
       </list>
     </option>
   </component>
@@ -653,7 +668,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40079364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26676077" sideWeight="0.6706349" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13761468" sideWeight="0.5992063" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -664,6 +678,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40079364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -734,34 +749,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kpm/games/game5/G5ns.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/Counter.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="19" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/ENumber.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kpm/common/Goal.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="30" selection-start="481" selection-end="492" vertical-scroll-proportion="0.0">
@@ -776,50 +763,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/KpmSoundLibrary.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="540" column="15" selection-start="25517" selection-end="25517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/GameData.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="45" selection-start="6318" selection-end="6318" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#126#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/Game.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="17" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-9.272727">
-          <folding>
-            <element signature="e#198#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="538" selection-end="538" vertical-scroll-proportion="0.60881543">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kpm/games/Game2 copy 1.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="28" selection-start="5558" selection-end="5558" vertical-scroll-proportion="0.33161953">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="31" selection-start="5320" selection-end="5334" vertical-scroll-proportion="-4.6538463">
-          <folding />
-        </state>
+        <state line="204" column="28" selection-start="5558" selection-end="5558" vertical-scroll-proportion="0.33161953" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/games/Game2ShapeList.as">
@@ -829,26 +775,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="31" selection-start="5320" selection-end="5334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/Game2.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="19" selection-start="6265" selection-end="6265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/game4/Game4.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1837" column="18" selection-start="81779" selection-end="81779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/KpmSoundLibrary.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="540" column="15" selection-start="25517" selection-end="25517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/ENumber.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="36" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="64" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/Game.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="43" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/GameData.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="36" selection-start="6299" selection-end="6309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kpm/common/Util.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1018" column="36" selection-start="29572" selection-end="29572" vertical-scroll-proportion="0.0">
+        <state line="1025" column="45" selection-start="29723" selection-end="29737" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="572" selection-end="585" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5Data.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="20" selection-start="3823" selection-end="3823" vertical-scroll-proportion="18.690908">
-          <folding>
-            <element signature="e#32#56#0" expanded="true" />
-          </folding>
+        <state line="40" column="42" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.47297296">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
+    <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="74" selection-start="3115" selection-end="3115" vertical-scroll-proportion="0.33333334">
-          <folding />
+        <state line="230" column="0" selection-start="7253" selection-end="7432" vertical-scroll-proportion="0.5810811">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#188#218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
