@@ -51,15 +51,11 @@ public class Game5 extends Game {
     //Piece_id
     //Number_id
 
-    public function Game5(isStandAlone : Boolean) : void
-    {
-
-        if(isStandAlone)
-            EventManager.addEvent(this, Event.ADDED_TO_STAGE, onInit);
+    public function Game5(isStandAlone : Boolean) : void{
+        if(isStandAlone) EventManager.addEvent(this, Event.ADDED_TO_STAGE, onInit);
     }
 
-    public function onInit(e : Event)
-    {
+    public function onInit(e : Event){
         initGame();
         EventManager.removeEvent(this, Event.ADDED_TO_STAGE);
     }
@@ -68,6 +64,7 @@ public class Game5 extends Game {
 
 
     public function initGame (pBubbleId : BubbleId = null, pLanguage: ELanguage = null, pPlayerTheme : EGameCharacter = null){
+
 
         if(mBubbleId != null) {
             Util.debug("initgame bubble id not null " + mBubbleId);
@@ -101,6 +98,8 @@ public class Game5 extends Game {
         //initialize GameData : which is the interface with the Driver
         mData = new Game5Data(mBubbleId, pLanguage, this, EGameCharacter.ALL);
 
+        //onRemove(null);
+        parent[GameData.PARAMETER_PANEL].visible = false;
         startGame();
     }
 
@@ -116,7 +115,6 @@ public class Game5 extends Game {
     //store col points in board (2d array)
     public function startGameHelper(e : Event){
         Util.debug("Game5.StartGameHelper");
-        onRemove(null);
         initializeParameters()
         G5D.outputParameters();
         initializePath();
@@ -127,7 +125,7 @@ public class Game5 extends Game {
     public override function createMusic() : KpmSound {
         Util.debug("Game5.createMusic");
         if(!mMute)
-            return G5D.createSound("backgroundMusicbird", 1, 0.7, true, false, true);
+            return G5D.createSound("G5_backgroundMusic", 1, 0.7, true, false, true);
         else return null;
     }
 
@@ -143,24 +141,22 @@ public class Game5 extends Game {
         if(!parent || !parent[GameData.PARAMETER_PANEL])
             throw("no parameter panel");
 
-        parent[GameData.PARAMETER_PANEL].x = 1200;
+        parent[GameData.PARAMETER_PANEL].x = 1150;
 
-        parent[GameData.PARAMETER_PANEL].y = 600;
+        parent[GameData.PARAMETER_PANEL].y = 650;
 
-        GameData.parameters = new Array(numParameters);
+        GameData.params = new Array(numParameters);
 
         for(var i=0; i < numParameters; i ++)
         {
-            GameData.parameters[i] = parent[GameData.PARAMETER_PANEL]["p" + i].text;
-            Util.debug("GameData.parameters " + i + " " + GameData.parameters[i]);
+            GameData.params[i] = parent[GameData.PARAMETER_PANEL]["p" + i].text;
+            Util.debug("GameData.parameters " + i + " " + GameData.params[i]);
         }
     }
 
     public override function onRemove(e : Event)
     {
-        Util.removeListofMc(G5D.mGameObjects);
-        Util.removeListofMc(G5D.mAnswerBoxCounters);
-
+        Util.removeChildsOf(this);
         G5D.onRemove(e);
     }
 
@@ -170,27 +166,27 @@ public class Game5 extends Game {
         Util.debug("Game5.setupPiecesAndWholes");
 
         Util.debug("PARAMETERS : ");
-        Util.debug("first number" + GameData.parameters[G5D.mpPathInitialValue]);
-        Util.debug("number of total nodes " + GameData.parameters[G5D.mpNumTotalNodesInPath]);
-        Util.debug("G5Data.numAnswersToChoose" +  GameData.parameters[G5D.mpNumAnswersToChoose]);
+        Util.debug("first number" + GameData.params[G5D.mpPathInitialValue]);
+        Util.debug("number of total nodes " + GameData.params[G5D.mpNumTotalNodesInPath]);
+        Util.debug("G5Data.numAnswersToChoose" +  GameData.params[G5D.mpNumAnswersToChoose]);
 
-        var numNodesAssigned : int;
+        var numNodesAssigned : int = GameData.params[G5D.mpPathInitialValue] ;
 
-        while(numNodesAssigned < GameData.parameters[G5D.mpNumTotalNodesInPath])
+        while(numNodesAssigned < (GameData.params[G5D.mpNumTotalNodesInPath] + GameData.params[G5D.mpPathInitialValue]))
         {
-            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.PIECE, Util.getRandBtw(GameData.parameters[G5D.mpMinRandomAdjacentPieces], GameData.parameters[G5D.mpMaxRandomNumAdjacentPieces])));
-            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.WHOLE, Util.getRandBtw(GameData.parameters[G5D.mpMinRandomNumAdjacentWholes], GameData.parameters[G5D.mpMaxRandomNumAdjacentWholes])));
+            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.PIECE, Util.getRandBtw(GameData.params[G5D.mpMinRandomAdjacentPieces], GameData.params[G5D.mpMaxRandomNumAdjacentPieces])));
+            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.WHOLE, Util.getRandBtw(GameData.params[G5D.mpMinRandomNumAdjacentWholes], GameData.params[G5D.mpMaxRandomNumAdjacentWholes])));
         }
 
 
-        while(G5D.mNodes.length != GameData.parameters[G5D.mpNumTotalNodesInPath])
+        while(G5D.mNodes.length != GameData.params[G5D.mpNumTotalNodesInPath])
             G5D.mNodes.pop();
 
-        if(G5D.mNodes.length != GameData.parameters[G5D.mpNumTotalNodesInPath])
-            Util.assertFailed(["not same", "G5Data.mNodes length : ", G5D.mNodes.length,  "numTotalNodes : ", GameData.parameters[G5D.mpNumTotalNodesInPath]]);
+        if(G5D.mNodes.length != GameData.params[G5D.mpNumTotalNodesInPath])
+            Util.assertFailed(["not same", "G5Data.mNodes length : ", G5D.mNodes.length,  "numTotalNodes : ", GameData.params[G5D.mpNumTotalNodesInPath]]);
 
 
-        for (var i = 0; i< GameData.parameters[G5D.mpNumTotalNodesInPath]; i++)
+        for (var i = 0; i< GameData.params[G5D.mpNumTotalNodesInPath]; i++)
         {
             addChild(addToGameObjects(G5D.mNodes[i], i));
         }
@@ -213,26 +209,23 @@ public class Game5 extends Game {
         {
             Util.printArray(["numeral ", pNode.numeral], "G5.addToGameObjects.addPiece");
 
-            G5D.mGameObjects.push(new GameComponent());
+           G5D.newCounter(index , G5D.mNodes[index].numeral , stage, G5D.mGameObjects);
 
-            G5D.mGameObjects[index].MovieName = "BoxCoverGray";
-
-            G5D.colorPiece(G5D.mGameObjects[index], EColor.Blue);
-
-            counter = new Counter(Counter.getNumberForm(mBubbleId), G5D.mNodes[index].numeral, stage);
-            G5D.mGameObjects[index].addMovieClip(counter, false, -40);
-
+            //counter = new Counter(Counter.getNumberForm(mBubbleId), G5D.mNodes[index].numeral, stage);
+            //G5D.mGameObjects[index].addMovieClip(counter, false, -100);
         }
 
         G5D.mGameObjects[index].x = this["tPath"]["loc"+(index+1)].x + this["tPath"].x;
         G5D.mGameObjects[index].y = this["tPath"]["loc"+(index+1)].y + this["tPath"].y;
 
 
-        switch(GameData.parameters[G5D.mpOrder])
-        {
-            case 1 : G5D.mWholes.reverse(); break;
-            case 0 : Util.shuffleArray(G5D.mWholes); break;
-        }
+        Util.debug("params[G5D.mpOrder]" + GameData.params[G5D.mpOrder]);
+
+        if(GameData.params[G5D.mpOrder] == 1)
+            {trace("case1"); G5D.mWholes.reverse();}
+
+        else if(GameData.params[G5D.mpOrder] == 0)
+            {trace("case0"); Util.shuffleArray(G5D.mWholes);}
 
 
         //if(G5Data.mGameObjects.length != index+1)
@@ -251,7 +244,7 @@ public class Game5 extends Game {
         // Instructions Sound
         G5D.soundLibrary.playLibSound(ESoundType.Instruction, "1", G5D.Language, null,null, G5D.Bubble.Name.Standard);
 
-        tInteractionPanel.visible = true;
+        //tInteractionPanel.visible = true;
         populateCounters();
         addCounterEvents(true);
 
@@ -262,15 +255,15 @@ public class Game5 extends Game {
     private function populateCounters()
     {
 
-        Util.printArray([GameData.parameters[G5D.mpNumAnswersToChoose], G5D.mWholes.length ], "Game5.setupCounters");
+        Util.printArray([GameData.params[G5D.mpNumAnswersToChoose], G5D.mWholes.length ], "Game5.setupCounters");
 
 
-        G5D.mAnswerBoxCounters = new Array(GameData.parameters[G5D.mpNumAnswersToChoose]);
+        G5D.mAnswerBoxCounters = new Array(GameData.params[G5D.mpNumAnswersToChoose]);
 
-        for (var i=0; i < GameData.parameters[G5D.mpNumAnswersToChoose] && i < G5D.mWholes.length ; i++){
+        for (var i=0; i < GameData.params[G5D.mpNumAnswersToChoose] && i < G5D.mWholes.length ; i++){
             //Create counter
 
-            G5D.newCounter(i, G5D.mWholes.pop(), stage);
+            G5D.newCounter(i, G5D.mWholes.pop(), stage, G5D.mAnswerBoxCounters);
             Util.debug("create counter " + i + G5D.mAnswerBoxCounters[i]);
 
             addChild(G5D.mAnswerBoxCounters[i]);
@@ -398,10 +391,12 @@ public class Game5 extends Game {
 
         G5D.mNodes[intersectionIndex].whole = false;
 
+        G5D.colorPiece(pAnswerCounter, EColor.Blue, pAnswerCounter.secondMovie.numeral);
+
         pAnswerCounter.drop();
         pAnswerCounter.x = G5D.mGameObjects[intersectionIndex].x;
         pAnswerCounter.y = G5D.mGameObjects[intersectionIndex].y;
-        G5D.colorPiece(pAnswerCounter, EColor.Blue);
+
         pAnswerCounter.done = true;
 
         G5D.CurrentTaskSuccess = GameData.TASK_SUCCESS;
@@ -483,6 +478,10 @@ public class Game5 extends Game {
 
 
         }
+    }
+
+    public function returnToDriver(e : Event){
+        G5D.dispatchEvent(new Event(GameData.RETURN_TO_DRIVER));
     }
 
 
