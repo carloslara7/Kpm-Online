@@ -29,6 +29,7 @@ import com.kpm.kpm.EBName;
 import com.kpm.kpm.EBStd;
 
 import flash.display.DisplayObject;
+import flash.display.DisplayObjectContainer;
 
 import flash.display.MovieClip;
 import flash.display.MovieClip;
@@ -38,36 +39,30 @@ import flash.media.SoundChannel;
 
 
 
+//com.kpm.games.game5.Game5
+// com.kpm.games.game5.Game5Data
+// --> skeleton of the code
 public class Game5 extends Game {
-
-
-
-    //*current bubble being played
-    private var mBubbleId : BubbleId;
-    //*whether music is muted or not
-    private var mMute: Boolean = false;
-
     //Whole_id
     //Piece_id
     //Number_id
 
-    public function Game5(isStandAlone : Boolean) : void{
-        if(isStandAlone) EventManager.addEvent(this, Event.ADDED_TO_STAGE, onInit);
+    public function Game5(pStandAlone : Boolean) : void{
+        super(pStandAlone);
+        EventManager.addEvent(this, GameData.GAME_BEGIN, initStandAlone);
     }
 
-    public function onInit(e : Event){
-        initGame();
-        EventManager.removeEvent(this, Event.ADDED_TO_STAGE);
+    public function initStandAlone(e : Event)
+    {
+        GameData.driver = false;
+        initGame(null);
     }
-
-
-
 
     public function initGame (pBubbleId : BubbleId = null, pLanguage: ELanguage = null, pPlayerTheme : EGameCharacter = null){
 
 
         if(mBubbleId != null) {
-            Util.debug("initgame bubble id not null " + mBubbleId);
+            Util.debug("initgame bubble id null " + mBubbleId);
             return;
         }
 
@@ -98,8 +93,8 @@ public class Game5 extends Game {
         //initialize GameData : which is the interface with the Driver
         mData = new Game5Data(mBubbleId, pLanguage, this, EGameCharacter.ALL);
 
+
         //onRemove(null);
-        parent[GameData.PARAMETER_PANEL].visible = false;
         startGame();
     }
 
@@ -138,27 +133,31 @@ public class Game5 extends Game {
     {
         var numParameters : int = 9;
 
-        if(!parent || !parent[GameData.PARAMETER_PANEL])
-            throw("no parameter panel");
-
-        parent[GameData.PARAMETER_PANEL].x = 1150;
-
-        parent[GameData.PARAMETER_PANEL].y = 650;
-
         GameData.params = new Array(numParameters);
+
 
         for(var i=0; i < numParameters; i ++)
         {
-            GameData.params[i] = parent[GameData.PARAMETER_PANEL]["p" + i].text;
+            GameData.params[i] = parameterPanel()["p" + i].text;
             Util.debug("GameData.parameters " + i + " " + GameData.params[i]);
         }
     }
 
+    //
     public override function onRemove(e : Event)
     {
+        Util.debug(["parameterPanel", parameterPanel()], "onRemove");
+
+
         Util.removeChildsOf(this);
-        G5D.onRemove(e);
+        G5D.removeLists(e);
+        removeCounters();
+
+        //Util.removeChild(this);
     }
+
+
+
 
 
     private function initializePath()
@@ -327,6 +326,8 @@ public class Game5 extends Game {
         Util.debug("G5.onGCDrag");
         EventManager.removeEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_UP);
         G5D.mAnswerBoxCounters[pIndex].drag();
+
+        G5D.CurrentGoal = G5D.mAnswerBoxCounters[pIndex].secondMovie.numeral;
 
         EventManager.addEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_DOWN, onGCDrop, G5D.mAnswerBoxCounters[pIndex]);
     }
