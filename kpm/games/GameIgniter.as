@@ -14,6 +14,8 @@ import com.kpm.common.Util;
 import com.kpm.kpm.EBScoreType;
 import com.kpm.kpm.KpmBubble;
 
+import flash.system.System;
+
 //import com.kpm.kpm.KpmLogTool;
 
 import flash.display.MovieClip;
@@ -56,14 +58,12 @@ import flash.utils.getDefinitionByName;
             _paramsPanel = Util.createAndPositionMc("ParametersPanel", 100, 100);
             interfacePanel = Util.createAndPositionMc("InterfacePanel", 1000, 600);
 
-            EventManager.addEvent(_paramsPanel, MouseEvent.CLICK, initializeGame) ;
+            EventManager.addEvent(_paramsPanel.tGoButton, MouseEvent.CLICK, initializeGame) ;
 
             addChild(_paramsPanel);
 
 
-            back_Bt = Util.addButton("BackButton", this, width-20, height-20, finishGame) as SimpleButton;
 
-            back_Bt.visible = false;
         }
 
         public function addInterfacePanel()
@@ -73,37 +73,41 @@ import flash.utils.getDefinitionByName;
 
         public function updateTaskTimer(e : Event)
         {
-            interfacePanel.tTaskTimer.text = game.Data.taskTimerNumber();
+            if(game)
+                interfacePanel.tTaskTimer.text = game.Data.taskTimerNumber();
         }
 
-        private function finishGame(){
+        public function finishGame(e : Event = null){
 
             if(game){
 
-                game.Data.onRemove();
-
+                game.Data.onRemove(null);
+                game = null;
                 Util.removeChild(game);
             }
 
             _paramsPanel.visible = true;
+            System.gc();
 
         }
 
         private function initializeGame(e : Event) {
 
+            if(game)
+                finishGame();
+
             _paramsPanel.visible = false;
 
-            finishGame();
 
             var newGame5:Class = getDefinitionByName(gameName) as Class;
-
             Util.printArray(["newGame5", newGame5], "initalizeGame");
 
-
-            trace("new game");
             game = new newGame5(true);
-            back_Bt.visible = true;
             addChild(game);
+
+            back_Bt = Util.addButton("BackButton", this, 1280 - 40, 800 - 40, finishGame) as SimpleButton;
+            back_Bt.visible = true;
+
 
         }
 
@@ -127,6 +131,7 @@ import flash.utils.getDefinitionByName;
 
         public function updateBubbleFeedback()
         {
+            /*
             Util.debug("updating bubble feedback" + game.mBubbleId + " " + game.Data.CurrentGoal, this);
             var xmlLogString : String ;
 
@@ -142,7 +147,7 @@ import flash.utils.getDefinitionByName;
             statsString += "TaskScore : " + (game.Data.gameGoal.taskScore) + separator;
             statsString += "Threshold : " + game.Data.CurrentScoreToEnjoy + " / " + game.Data.CurrentScoreToPass + separator;
 
-            if(game.Data.mBubbleId.Name.ScoreType == EBScoreType.Choice)
+            if(game.mBubbleId.Name.ScoreType == EBScoreType.Choice)
             {
                 statsString += "m/n	: " + game.Data.gameGoal.numCorrectOptions + " / " + game.Data.gameGoal.numOptions + separator;
             }
@@ -167,6 +172,7 @@ import flash.utils.getDefinitionByName;
             xmlLogString = xmlLogString.split("\"").join(" ");
 
             interfacePanel.tStats.tLog.text = xmlLogString;
+            */
         }
 
         public function get bubble():KpmBubble {

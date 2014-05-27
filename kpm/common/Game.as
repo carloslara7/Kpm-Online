@@ -39,6 +39,7 @@ public class Game extends MovieClip{
 
     public function onBubbleFinished(e:Event)
     {
+        Util.debug("game.onBubbleFinished");
         if(parent == stage)
         {
             Data.Level = Data.Bubble.Level + 1 ;

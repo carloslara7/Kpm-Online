@@ -23,20 +23,13 @@ import com.kpm.common.KpmSound;
 import com.kpm.common.Util;
 import com.kpm.games.EGameCharacter;
 import com.kpm.games.EState;
-import com.kpm.games.game5.G5ns;
+import com.kpm.games.GameIgniter;
 import com.kpm.kpm.BubbleId;
 import com.kpm.kpm.EBName;
 import com.kpm.kpm.EBStd;
-
-import flash.display.DisplayObject;
-import flash.display.DisplayObjectContainer;
-
-import flash.display.MovieClip;
 import flash.display.MovieClip;
 import flash.events.Event;
 import flash.events.MouseEvent;
-import flash.media.SoundChannel;
-
 
 
 //com.kpm.games.game5.Game5
@@ -146,9 +139,6 @@ public class Game5 extends Game {
     //
     public override function onRemove(e : Event)
     {
-        Util.debug(["parameterPanel", parameterPanel()], "onRemove");
-
-
         Util.removeChildsOf(this);
         G5D.removeLists(e);
         removeCounters();
@@ -169,12 +159,16 @@ public class Game5 extends Game {
         Util.debug("number of total nodes " + GameData.params[G5D.mpNumTotalNodesInPath]);
         Util.debug("G5Data.numAnswersToChoose" +  GameData.params[G5D.mpNumAnswersToChoose]);
 
-        var numNodesAssigned : int = GameData.params[G5D.mpPathInitialValue] ;
+        var firstNumber : int = GameData.params[G5D.mpPathInitialValue] ;
+        var lastNumber : int = int(GameData.params[G5D.mpNumTotalNodesInPath]) + firstNumber;
+        var i = firstNumber;
 
-        while(numNodesAssigned < (GameData.params[G5D.mpNumTotalNodesInPath] + GameData.params[G5D.mpPathInitialValue]))
+        while( i < lastNumber)
         {
-            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.PIECE, Util.getRandBtw(GameData.params[G5D.mpMinRandomAdjacentPieces], GameData.params[G5D.mpMaxRandomNumAdjacentPieces])));
-            numNodesAssigned += G5D.addNodesToPath(G5D.generateGroup(numNodesAssigned, EG5PieceType.WHOLE, Util.getRandBtw(GameData.params[G5D.mpMinRandomNumAdjacentWholes], GameData.params[G5D.mpMaxRandomNumAdjacentWholes])));
+            i += G5D.addNodesToPath(G5D.generateGroup(i, EG5PieceType.PIECE, Util.getRandBtw(GameData.params[G5D.mpMinRandomAdjacentPieces], GameData.params[G5D.mpMaxRandomNumAdjacentPieces])));
+            i += G5D.addNodesToPath(G5D.generateGroup(i, EG5PieceType.WHOLE, Util.getRandBtw(GameData.params[G5D.mpMinRandomNumAdjacentWholes], GameData.params[G5D.mpMaxRandomNumAdjacentWholes])));
+
+            Util.debug("generating groups with cardinality so far : " + i + " up to : " + lastNumber);
         }
 
 
@@ -199,7 +193,8 @@ public class Game5 extends Game {
         {
             Util.printArray(["numeral ", pNode.numeral], "G5.addToGameObjects.addWhole");
 
-            G5D.mGameObjects.push(Util.createMc("BoxWhole"));
+            G5D.mGameObjects.push(GameComponent.createGCFromMc("BoxWhole", ["numeral", G5D.mNodes[index].numeral]));
+            G5D.colorPiece(G5D.mGameObjects[index], EColor.Blue);
 
             G5D.mWholes.push(G5D.mNodes[index].numeral);
 
@@ -208,7 +203,10 @@ public class Game5 extends Game {
         {
             Util.printArray(["numeral ", pNode.numeral], "G5.addToGameObjects.addPiece");
 
-           G5D.newCounter(index , G5D.mNodes[index].numeral , stage, G5D.mGameObjects);
+            G5D.newCounter(index , G5D.mNodes[index].numeral , stage, G5D.mGameObjects);
+            G5D.mGameObjects[index].addMovieBelow("BoxWhole");
+            G5D.colorPiece(G5D.mGameObjects[index], EColor.Blue);
+
 
             //counter = new Counter(Counter.getNumberForm(mBubbleId), G5D.mNodes[index].numeral, stage);
             //G5D.mGameObjects[index].addMovieClip(counter, false, -100);
@@ -263,6 +261,8 @@ public class Game5 extends Game {
             //Create counter
 
             G5D.newCounter(i, G5D.mWholes.pop(), stage, G5D.mAnswerBoxCounters);
+            G5D.colorPiece(G5D.mAnswerBoxCounters[i], EColor.Blue);
+
             Util.debug("create counter " + i + G5D.mAnswerBoxCounters[i]);
 
             addChild(G5D.mAnswerBoxCounters[i]);
@@ -327,7 +327,10 @@ public class Game5 extends Game {
         EventManager.removeEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_UP);
         G5D.mAnswerBoxCounters[pIndex].drag();
 
-        G5D.CurrentGoal = G5D.mAnswerBoxCounters[pIndex].secondMovie.numeral;
+        //IMPORTANT
+        Data.startTask(GameData.params[G5D.mpNumPresentations], 1);
+
+        G5D.CurrentGoal = G5D.mAnswerBoxCounters[pIndex].numeral;
 
         EventManager.addEvent(G5D.mAnswerBoxCounters[pIndex],  MouseEvent.MOUSE_DOWN, onGCDrop, G5D.mAnswerBoxCounters[pIndex]);
     }
@@ -366,7 +369,7 @@ public class Game5 extends Game {
 
             if(intersectionIndex != -1)
             {
-                if(G5D.mNodes[intersectionIndex].numeral == pAnswerCounter.secondMovie.numeral)
+                if(G5D.mNodes[intersectionIndex].numeral == pAnswerCounter.numeral)
                 {
                     collideSuccess(intersectionIndex, pAnswerCounter);
 
@@ -388,11 +391,11 @@ public class Game5 extends Game {
     {
         Util.printArray(["intersect cardinality matches index ", intersectionIndex],"Game5.onGCDrop");
 
-        Util.removeChild(G5D.mGameObjects[intersectionIndex]);
+        //Util.removeChild(G5D.mGameObjects[intersectionIndex]);
 
         G5D.mNodes[intersectionIndex].whole = false;
 
-        G5D.colorPiece(pAnswerCounter, EColor.Blue, pAnswerCounter.secondMovie.numeral);
+        G5D.colorPiece(pAnswerCounter, EColor.Blue);
 
         pAnswerCounter.drop();
         pAnswerCounter.x = G5D.mGameObjects[intersectionIndex].x;
@@ -427,6 +430,11 @@ public class Game5 extends Game {
     function checkStartRound()
     {
         var readyToStartRound : Boolean = true;
+
+        if(Data.isBubbleFinished())
+        {
+            (parent as GameIgniter).finishGame();
+        }
 
         for each (var counter : GameComponent in G5D.mAnswerBoxCounters)
             if(!counter.done) readyToStartRound = false;
