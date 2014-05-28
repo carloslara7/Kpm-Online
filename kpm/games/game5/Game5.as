@@ -102,6 +102,8 @@ public class Game5 extends Game {
     //$populate platforms (branches, wires)
     //store col points in board (2d array)
     public function startGameHelper(e : Event){
+        stage.removeEventListener( Event.RENDER, startGameHelper);
+
         Util.debug("Game5.StartGameHelper");
         initializeParameters()
         G5D.outputParameters();
@@ -328,7 +330,7 @@ public class Game5 extends Game {
         G5D.mAnswerBoxCounters[pIndex].drag();
 
         //IMPORTANT
-        Data.startTask(GameData.params[G5D.mpNumPresentations], 1);
+        Data.startTask(GameData.params[G5D.mpNumAnswersToChoose], 1);
 
         G5D.CurrentGoal = G5D.mAnswerBoxCounters[pIndex].numeral;
 
