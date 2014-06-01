@@ -1,6 +1,5 @@
 ﻿package com.kpm.games.walkthewalk {
 
-  import com.kpm.common.ENumber;
   import com.kpm.common.Util;
   
   import flash.display.MovieClip;

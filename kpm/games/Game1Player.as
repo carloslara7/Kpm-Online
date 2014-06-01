@@ -54,18 +54,18 @@ package com.kpm.games
 		public function turn(pDirection : Point2D)
 		{
 			Util.debug(previousTile + " " + Tile + " " + pDirection, this);
-			if(defaultFacing == GameData.UP)
+			if(defaultFacing == GameLib.UP)
 				return;
 				
-			if(currentlyFacing == GameData.RIGHT && pDirection.x < 0)
+			if(currentlyFacing == GameLib.RIGHT && pDirection.x < 0)
 			{
 				scaleX *= -1;
-				currentlyFacing = GameData.LEFT;
+				currentlyFacing = GameLib.LEFT;
 			}
-			else if(currentlyFacing == GameData.LEFT && pDirection.x > 0)
+			else if(currentlyFacing == GameLib.LEFT && pDirection.x > 0)
 			{
 				scaleX *= -1;
-				currentlyFacing = GameData.RIGHT;
+				currentlyFacing = GameLib.RIGHT;
 			}
 		}
 		

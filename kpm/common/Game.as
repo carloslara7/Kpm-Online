@@ -13,17 +13,19 @@ import flash.events.Event;
 
 public class Game extends MovieClip{
 
-    protected var mData	 			: GameData;
+    protected var mData	 			: GameLib;
     protected var clickedTarget   : MovieClip;
     protected var backButton : MovieClip;
     //*current bubble being played
     private var _mBubbleId : BubbleId;
     //*whether music is muted or not
     private var _mMute: Boolean = false;
+    private var _world : MovieClip ;
+
 
 
     public function Game(pStandAlone : Boolean) {
-        if(pStandAlone) EventManager.addEvent(this, Event.ADDED_TO_STAGE, sendEvent, GameData.GAME_BEGIN);
+        if(pStandAlone) EventManager.addEvent(this, Event.ADDED_TO_STAGE, sendEvent, GameLib.BUBBLE_BEGIN);
 
     }
 
@@ -47,10 +49,14 @@ public class Game extends MovieClip{
     }
 
 
+    public function goBackToParamsPanel(e : Event)
+    {
+        GameLib.driver.dispatchEvent(new Event(GameIgniter.ANIMATION_OVER));
+    }
 
     public function onInstructionsFinished(e: Event) {}
 
-    public function createMusic() : KpmSound
+    public function initializeAudio() : KpmSound
     {
         return null;
     }
@@ -80,6 +86,14 @@ public class Game extends MovieClip{
 
     public function set mMute(value:Boolean):void {
         _mMute = value;
+    }
+
+    public function get world():MovieClip {
+        return _world;
+    }
+
+    public function set world(value:MovieClip):void {
+        _world = value;
     }
 }
 }

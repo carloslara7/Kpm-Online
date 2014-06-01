@@ -2,114 +2,65 @@ package com.kpm.common
 {
 	public class ENumber
 	{
-		
-  	    public static const zero : ENumber = new ENumber("zero");
-   	    public static const one   	: ENumber = new ENumber("one");
-	    public static const two	  	: ENumber = new ENumber("two");
-	    public static const three	: ENumber = new ENumber("three");
-		public static const four	: ENumber = new ENumber("four");	    	    	    
-		public static const five	: ENumber = new ENumber("five");
-		public static const six		: ENumber = new ENumber("six");
-		public static const seven	: ENumber = new ENumber("seven");
-		public static const eight	: ENumber = new ENumber("eight");
-		public static const nine	: ENumber = new ENumber("nine");
-		public static const ten		: ENumber = new ENumber("ten");
-		public static const eleven 		: ENumber = new ENumber("eleven");
-	    public static const twelve 		: ENumber = new ENumber("twelve");
-	    public static const thirteen	: ENumber = new ENumber("thirteen");
-		public static const fourteen	: ENumber = new ENumber("fourteen");	    	    	    
-		public static const fifteen		: ENumber = new ENumber("fifteen");
-		public static const sixteen		: ENumber = new ENumber("sixteen");
-		public static const seventeen	: ENumber = new ENumber("seventeen");
-		public static const eighteen	: ENumber = new ENumber("eighteen");
-		public static const nineteen	: ENumber = new ENumber("nineteen");
-		public static const twenty		: ENumber = new ENumber("twenty");
-		
+         public static const zero : String = "zero";
+         public static const one   	: String ="one";
+         public static const two	  	: String ="two";
+         public static const three	:  String ="three";
+         public static const four	: String = "four";
+         public static const five	: String = "five";
+         public static const six		: String = "six";
+         public static const seven	: String = "seven";
+         public static const eight	: String = "eight";
+         public static const nine	: String = "nine";
+
+         public static const ten		: String = "ten";
+         public static const eleven 		: String = "eleven";
+         public static const twelve 		: String = "twelve";
+         public static const thirteen	: String = "thirteen";
+         public static const fourteen	: String = "fourteen";
+         public static const fifteen		: String = "fifteen";
+         public static const sixteen		: String = "sixteen";
+         public static const seventeen	: String = "seventeen";
+         public static const eighteen	: String = "eighteen";
+         public static const nineteen	: String = "nineteen";
+
+         public static const twenty		: String = "twenty";
+         public static const twentyone : String = "twentyone";
+         public static const twentytwo 	: String = "twentytwo";
+         public static const twentythree	  	: String = "twentythree";
+         public static const twentyfour	: String = "twentyfour";
+         public static const twentyfive	: String = "twentyfive";
+         public static const twentysix	: String = "twentysix";
+         public static const twentyseven		: String = "twentyseven";
+        public static const twentyeight	: String = "thirtyeight";
+        public static const twentynine	: String = "thirtynine";
+
+
+        public static const thirty		: String = "thirty";
+        public static const thirtyone : String = "thirtyone";
+        public static const thirtytwo 	: String = "thirtytwo";
+        public static const thirtythree	  	: String = "thirtythree";
+        public static const thirtyfour	: String = "thirtyfour";
+        public static const thirtyfive	: String = "thirtyfive";
+        public static const thirtysix	: String = "thirtysix";
+        public static const thirtyseven		: String = "thirtyseven";
+        public static const thirtyeight	: String = "thirtyeight";
+         public static const thirtynine	: String = "thirtynine";
+
+
+        public static const numbers : Array =
+            ["zero","one","two","three","four","five","six", "seven", "eight","nine",
+                "ten","eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
+                "twenty","twenty-one","twenty-two","twenty-three","twenty-four","twenty-five","twenty-six", "twenty-seven", "twenty-eight","twenty-nine",
+                "thirtyone","thirtytwo","thirtythree","thirtyfour","thirtyfive","thirtysix", "thirtyseven", "thirtyeight","thirtynine","forty"]
+
 		public var englishText : String;
-		
+
 		public function ENumber(pEnglish : String)
 		{
 			englishText = pEnglish;
 		}
-		
-		public function toString() : String
-		{
-			return ("NUMBER" + Text);
-		}
-	
-		public function get Text() : uint
-		{
-			switch (this)
-			{
-				case one 	: return 1; break;
-				case two 	: return 2; break;
-				case three 	: return 3; break;
-				case four 	: return 4; break;
-				case five 	: return 5; break;
-				
-				case six 	: return 6; break;
-				case seven 	: return 7; break;
-				case eight 	: return 8; break;
-				case nine 	: return 9; break;
-				case ten 	: return 10; break;
-				
-				case eleven 	: return 11; break;
-				case twelve		: return 12; break;
-				case thirteen	: return 13; break;
-				case fourteen	: return 14; break;
-				case fifteen	: return 15; break;
-				
-				case sixteen	: return 16; break;
-				case seventeen	: return 17; break;
-				case eighteen	: return 18; break;
-				case nineteen	: return 19; break;
-				case twenty	 	: return 20; break;
-			}
-			
-			return 0;
-		}	
-		
-		
-		
-		public static function getEnum(pNumber : uint) : ENumber
-		{
-			switch (pNumber)
-			{
-				case 1 	: return one; break;
-				case 2 	: return two; break;
-				case 3 	: return three; break;
-				case 4 	: return four; break;
-				case 5 	: return five; break;
-				
-				case 6 	: return six; break;
-				case 7 	: return seven; break;
-				case 8 	: return eight; break;
-				case 9 	: return nine; break;
-				case 10 : return ten; break;
-				
-				case 11	: return eleven; break;
-				case 12	: return twelve; break;
-				case 13	: return thirteen; break;
-				case 14	: return fourteen; break;
-				case 15 : return fifteen; break;
-				
-				case 16	: return sixteen; break;
-				case 17	: return seventeen; break;
-				case 18	: return eighteen; break;
-				case 19	: return nineteen; break;
-				case 20 : return twenty; break;
-			}
-			
-			return one;
-		}	
-		
-		public function equals(pNumber : ENumber)
-		{
-			if(Text == pNumber.Text)
-				return true;
-				
-			return false;
-		}
 	    
 	}
 }
+

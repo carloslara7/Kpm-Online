@@ -9,7 +9,7 @@ package com.kpm.games {
 
 import com.kpm.common.EventManager;
 import com.kpm.common.Game;
-import com.kpm.common.GameData;
+import com.kpm.common.GameLib;
 import com.kpm.common.Util;
 import com.kpm.kpm.EBScoreType;
 import com.kpm.kpm.KpmBubble;
@@ -30,6 +30,8 @@ import flash.utils.getDefinitionByName;
 
         private var _paramsPanel : MovieClip
         private var _bubble : KpmBubble
+
+        public static const ANIMATION_OVER : String = "ANIMATION_OVER";
 
         var interfacePanel : MovieClip;
         var _accompanied : Boolean;
@@ -55,10 +57,11 @@ import flash.utils.getDefinitionByName;
         private function initParamsPanel()
         {
 
-            _paramsPanel = Util.createAndPositionMc("ParametersPanel", 100, 100);
+            _paramsPanel = Util.createAndPositionMc("ParametersPanel", 100, 20);
             interfacePanel = Util.createAndPositionMc("InterfacePanel", 1000, 600);
 
             EventManager.addEvent(_paramsPanel.tGoButton, MouseEvent.CLICK, initializeGame) ;
+
 
             addChild(_paramsPanel);
 
@@ -107,6 +110,8 @@ import flash.utils.getDefinitionByName;
 
             back_Bt = Util.addButton("BackButton", this, 1280 - 40, 800 - 40, finishGame) as SimpleButton;
             back_Bt.visible = true;
+
+            EventManager.addEvent(game, ANIMATION_OVER, finishGame);
 
 
         }

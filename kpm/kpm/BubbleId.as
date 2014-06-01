@@ -2,7 +2,7 @@ package com.kpm.kpm
 {	
 	import com.kpm.common.EGame;
 	import com.kpm.common.Util;
-	import com.kpm.common.GameData;
+	import com.kpm.common.GameLib;
 	
 	public class BubbleId
 	{
@@ -75,7 +75,7 @@ package com.kpm.kpm
 			Util.debug("making bubble " + name);
 			
 			if(EBName[name] == null)
-				GameData.reportError("EBName " + name + " is not a bubble name");
+				GameLib.reportError("EBName " + name + " is not a bubble name");
 			return new BubbleId(EBName[name], level);
 			
 		}
