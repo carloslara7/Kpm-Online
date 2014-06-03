@@ -516,19 +516,21 @@ public class G5 extends Game {
 
         function addTimedCharacter(e : Event)
         {
-            G5L.mAnimatingNodes = new Array();
+            G5L.mAnimations_List = new Array();
 
             if(G5L.mNodes[animationIndex].numeral % 5 == 0){
-                G5L.mAnimatingNodes[i++] = G5L.setupEndAnimation(animationIndex, stage);
+                G5L.mAnimations_List[i] = G5L.setupEndAnimation(animationIndex, stage);
 
             }
             else{
-                //G5L.newCounter(i, G5L.mPiecesList[animationIndex].numeral,  stage, restOfNodesCovered_List);
-                //world.addChild(restOfNodesCovered_List[animationIndex]);
+
+                restOfNodesCovered_List[i] = G5L.newCounter(i, G5L.mPiecesList[animationIndex].numeral,  stage, restOfNodesCovered_List);
+                world.addChild(restOfNodesCovered_List[i]);
 
             }
 
             animationIndex++;
+            i++;
 
             Util.debug("G5.endAnimation.addCharacterAndVoice " + animationIndex );
 
