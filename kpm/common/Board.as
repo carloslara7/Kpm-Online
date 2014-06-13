@@ -15,7 +15,8 @@ package com.kpm.common
 		public static const ONE_TILE		: Point2D = new Point2D(1,1);
 		public static const NULL_POINT		: Point2D = new Point2D(-1,-1);					
 		
-				private var mTileSize 	: uint;
+		
+		private var mTileSize 	: uint;
 		private var mNumRows 	: uint;
 		private var mNumCols 	: uint;
 		public var  Offset 		: Point2D;
@@ -179,10 +180,10 @@ package com.kpm.common
 			{
 				currentTile = queue.dequeue() as Point2D;
 				
-				for (var i in GameData.arrows)
+				for (var i in GameLib.arrows)
 				{
-					var x = currentTile.x + GameData.arrows[i].x;
-					var y = currentTile.y + GameData.arrows[i].y
+					var x = currentTile.x + GameLib.arrows[i].x;
+					var y = currentTile.y + GameLib.arrows[i].y
 					currentDistance = logicBoard[currentTile.x][currentTile.y]+1;
 					if(inBounds(new Point2D(x,y)) && logicBoard[x][y] == TILE_EMPTY)
 					{
@@ -314,7 +315,7 @@ package com.kpm.common
 			if(a == 30)
 			{
 				printLogicBoard();
-				GameData.reportError("could not find random point");
+				GameLib.reportError("could not find random point");
 			}
 			
 			

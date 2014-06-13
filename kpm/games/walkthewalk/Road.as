@@ -334,7 +334,7 @@
     private function onEndTweenFinish1(event: TweenEvent){
       Util.debug("Done1!", this);
       mSoundChannel.stop();
-      this.dispatchEvent(new Event(GameData.RETURN_TO_DRIVER));
+      this.dispatchEvent(new Event(GameLib.RETURN_TO_DRIVER));
     }
     
     private function onEndTweenFinish2(event: TweenEvent){
@@ -351,7 +351,7 @@
       this.removeChild(mPeds[mNumPeds - 1]);
       mPeds[mNumPeds - 1].visible = false;
 	  mSoundChannel.stop();
-	  this.dispatchEvent(new Event(GameData.RETURN_TO_DRIVER));
+	  this.dispatchEvent(new Event(GameLib.RETURN_TO_DRIVER));
     }
 	
     public function startEndSequence(pObjName: String, pSequence: Number){

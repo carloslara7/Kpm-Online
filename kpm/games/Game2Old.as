@@ -84,7 +84,7 @@
 
             if(G2Data.lvl_ClickColor)
             {
-                CurrentPuzzle.paintPuzzleShapes(GameData.colorsRGB);
+                CurrentPuzzle.paintPuzzleShapes(GameLib.colorsRGB);
             }
 
             if(G2Data.lvl_ClickNumber)
@@ -96,7 +96,7 @@
 
             if(G2Data.lvl_PlaceShape)
             {
-                CurrentPuzzle.paintPuzzleShapes(GameData.colorsRGB);
+                CurrentPuzzle.paintPuzzleShapes(GameLib.colorsRGB);
                 beginTaskPlaceShapeHelper(null);
 
 
@@ -167,7 +167,7 @@
             {
                 stageShape = CurrentPuzzle.Puzzle.getChildAt(i)  as MovieClip;
                 stageShape.addEventListener(MouseEvent.MOUSE_DOWN, onShapeClick, false, 0 , true);
-                if(GameData.driver) CursorManager.addOverEvents(stageShape);
+                if(GameLib.driver) CursorManager.addOverEvents(stageShape);
                 stageShape.buttonMode = true;
 
                 if(G2Data.lvl_MatchShape)
@@ -229,7 +229,7 @@
                 chosenShapeInList.x = shapeMovieList.chosenShape.x + shapeMovieList.x;
                 chosenShapeInList.y = shapeMovieList.chosenShape.y + shapeMovieList.y;
                 chosenShapeInList.addEventListener(MouseEvent.MOUSE_DOWN, onPlaceShapeClick, false, 0 , true);
-                if(GameData.driver) CursorManager.addOverEvents(chosenShapeInList);
+                if(GameLib.driver) CursorManager.addOverEvents(chosenShapeInList);
                 chosenShapeInList.buttonMode = true;
 
             }
@@ -241,7 +241,7 @@
             for(var i=0; i< shapeMovieList.Rows.length; i++)
             {
                 shapeMovieList.Rows[i].addEventListener(MouseEvent.MOUSE_DOWN, onPlaceShapeClick, false, 0 , true);
-                if(GameData.driver) CursorManager.addOverEvents(shapeMovieList.Rows[i]);
+                if(GameLib.driver) CursorManager.addOverEvents(shapeMovieList.Rows[i]);
                 shapeMovieList.Rows[i].buttonMode = true;
             }
 
@@ -556,7 +556,7 @@
             //	return;
 
             Util.debug("accepted drop", this);
-            if(GameData.driver) CursorManager.setIdleCursor(null);
+            if(GameLib.driver) CursorManager.setIdleCursor(null);
 
             ShapeHit = shapeMovieList.hitShape(localShape);
 
@@ -569,7 +569,7 @@
             {
                 if(!clickedBlankOnce)
                 {
-                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, GameData.TRY_AGAIN);
+                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, GameLib.TRY_AGAIN);
                     //G2Data.SoundPlayer.playSound(G2Data.createSound(GameData.TRY_AGAIN, 3));
                 }
 
@@ -580,14 +580,14 @@
                 Util.debug("local shape class " + Util.getClassName(localShape), this);
                 Util.debug("shape hit class " + ShapeHit, this);
 
-                if(GameData.driver) CursorManager.setIdleCursor(null);
+                if(GameLib.driver) CursorManager.setIdleCursor(null);
 
                 if(Util.sameClass(ShapeHit, localShape))
                 {
 
                     CurrentShape.removeEventListener(MouseEvent.MOUSE_DOWN, onShapeClick);
                     CurrentShape.removeEventListener(MouseEvent.MOUSE_UP , currentShapeDrop);
-                    if(GameData.driver) CursorManager.removeOverEvents(CurrentShape);
+                    if(GameLib.driver) CursorManager.removeOverEvents(CurrentShape);
                     CurrentShape.drop();
                     animateShape(null, CurrentShape, ShapeHit);
                     clickedBlankOnce = false;
@@ -654,7 +654,7 @@
             }
 
             Util.debug("accepted drop", this);
-            if(GameData.driver) CursorManager.setIdleCursor(null);
+            if(GameLib.driver) CursorManager.setIdleCursor(null);
 
 
     //				var debugPoint : MovieClip = new DebugPoint();
@@ -680,7 +680,7 @@
                 Util.debug("local shape class " + CurrentShape.Movie, this);
                 Util.debug("shape hit class " + ShapeHit.Movie, this);
 
-                if(GameData.driver) CursorManager.setIdleCursor(null);
+                if(GameLib.driver) CursorManager.setIdleCursor(null);
 
                 Util.debug("scales " + ShapeHit.scaleX + " " + CurrentShape.scaleX + " " +  ShapeHit.scaleY + " " + CurrentShape.scaleY);
 
@@ -695,7 +695,7 @@
                     G2Data.gameGoal.numOptions = CurrentPuzzle.Puzzle.numChildren;
                     CurrentShape.removeEventListener(MouseEvent.MOUSE_DOWN, onPlaceShapeClick);
                     CurrentShape.removeEventListener(MouseEvent.MOUSE_UP , onPlaceShapeDrop);
-                    if(GameData.driver) CursorManager.removeOverEvents(CurrentShape);
+                    if(GameLib.driver) CursorManager.removeOverEvents(CurrentShape);
                     CurrentShape.drop();
                     animateShape(null, CurrentShape, ShapeHit);
 
@@ -926,9 +926,9 @@
                 G2Data.taskTimer.start();
         }
 
-        public override function createMusic() : KpmSound
+        public override function initializeAudio() : KpmSound
         {
-            return G2Data.createSound(GameData.GAME_PLAY, 1, 0.3, true, false);
+            return G2Data.createSound(GameLib.GAME_PLAY, 1, 0.3, true, false);
         }
 
         public override function onStateChanged(e:Event)
@@ -940,7 +940,7 @@
                 G2Data.taskXML.@shapeAttempts = negativeScoreCounter;
                 if(G2Data.taskXML.children().length() == 1)
                     G2Data.taskXML.@puzzleName = CurrentPuzzle.MovieName;
-                G2Data.CurrentTaskSuccess = GameData.TASK_SUCCESS;
+                G2Data.CurrentTaskSuccess = GameLib.TASK_SUCCESS;
 
                 if(G2Data.lvl_ClickShape || G2Data.lvl_MatchShape || G2Data.lvl_PlaceShape)
                 {
@@ -954,7 +954,7 @@
                 //if(G2Data.shapeSuccessCounter == 1)
                 if(G2Data.shapeSuccessCounter == CurrentPuzzle.NumTotalShapes)
                 {
-                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_MOVE, G2Data.Language, null, null, null, GameData.FEEDBACK_FINISHED);
+                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_MOVE, G2Data.Language, null, null, null, GameLib.FEEDBACK_FINISHED);
 
                     //G2Data.SoundPlayer.pushSound
                     //!!(G2Data.createSound(EState.GOOD_MOVE.Text,3), GameData.FEEDBACK_FINISHED);
@@ -963,7 +963,7 @@
                 }
                 else
                 {
-                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_TASK, null, null, null, null, GameData.FEEDBACK_FINISHED);
+                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, EState.GOOD_TASK, null, null, null, null, GameLib.FEEDBACK_FINISHED);
                     //!!G2Data.SoundPlayer.stopCurrentSound(false);
                     //G2Data.SoundPlayer.playSound(G2Data.createSound(EState.GOOD_TASK.Text, 3, 1, false, false), GameData.FEEDBACK_FINISHED);
                 }
@@ -983,7 +983,7 @@
 
 
                 if(G2Data.lvl_MatchShape || G2Data.lvl_ClickShape)
-                    G2Data.CurrentTaskSuccess = GameData.TASK_FAILURE;
+                    G2Data.CurrentTaskSuccess = GameLib.TASK_FAILURE;
 
                 else if(G2Data.lvl_PlaceShape)
                     failPlaceShape();
@@ -1003,7 +1003,7 @@
                 else if(((G2Data.lvl_MatchShape || G2Data.lvl_PlaceShape) && G2Data.feedbackSound == CurrentShape.getShortType())
                         || Util.getRandBtw(0,5) < 1)
                 {
-                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, GameData.TRY_AGAIN, G2Data.Language)
+                    G2Data.soundLibrary.playLibSound(ESoundType.Feedback, GameLib.TRY_AGAIN, G2Data.Language)
                     //G2Data.SoundPlayer.pushSound(G2Data.createSound(GameData.TRY_AGAIN, 2));
 
                 }
@@ -1081,7 +1081,7 @@
                     }
                 }
 
-                G2Data.CurrentTaskSuccess = GameData.TASK_FAILURE;
+                G2Data.CurrentTaskSuccess = GameLib.TASK_FAILURE;
             }
         }
 
@@ -1163,7 +1163,7 @@
             Util.debug("ENDING", this);
             Util.debug("parent width " + parent.width);
 
-            var parentWidth : int = GameData.driver ? 1280 : 1000;
+            var parentWidth : int = GameLib.driver ? 1280 : 1000;
             var maskSize : Point2D =
                     new Point2D(G2Data.SHAPES_SIZE.x*(parentWidth/G2Data.SCREEN_SIZE.x) - G2Data.options_y,
                             G2Data.SHAPES_SIZE.y*(parent.height/G2Data.SCREEN_SIZE.y) - 96);
@@ -1247,11 +1247,11 @@
                 dShape = CurrentPuzzle.Puzzle.getChildAt(j)  as MovieClip;
                 if(G2Data.gameGoal.quality == EGoal.COLOR
                         && dShape.color.equals(G2Data.gameGoal.currentGoal))
-                    dShape.startBlink(GameData.BLINK_PERIOD, GameData.NUM_TIMES_BLINK)
+                    dShape.startBlink(GameLib.BLINK_PERIOD, GameLib.NUM_TIMES_BLINK)
                 else
                 if (G2Data.gameGoal.quality == EGoal.SHAPE &&
                         dShape.Text.indexOf(G2Data.gameGoal.currentGoal.Text) != -1)
-                    dShape.startBlink(GameData.BLINK_PERIOD, GameData.NUM_TIMES_BLINK)
+                    dShape.startBlink(GameLib.BLINK_PERIOD, GameLib.NUM_TIMES_BLINK)
 
             }
         }

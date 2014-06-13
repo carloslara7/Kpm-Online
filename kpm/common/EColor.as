@@ -17,6 +17,7 @@ package com.kpm.common
 		public static const Purple		: EColor = new EColor();
 		public static const Brown		: EColor = new EColor();
    	    public static const Black		: EColor = new EColor();
+        public static const BlueGray	: EColor = new EColor();
    	    
    	    public function equals(pColor : EColor) : Boolean
    	    {

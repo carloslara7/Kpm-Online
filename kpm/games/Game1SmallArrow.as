@@ -3,7 +3,7 @@ package com.kpm.games
 	import flash.display.MovieClip;
 	import com.kpm.common.GameComponent;
 	import com.kpm.common.Point2D;	
-	import com.kpm.common.GameData;	
+	import com.kpm.common.GameLib;
 				
 	public class Game1SmallArrow extends GameComponent {
 		
@@ -13,13 +13,13 @@ package com.kpm.games
 			super();
 			direction = pDirection.clone();
 			
-			if(pDirection.equals(GameData.UP))
+			if(pDirection.equals(GameLib.UP))
 				gotoAndStop("up");
-			else if(pDirection.equals(GameData.DOWN))
+			else if(pDirection.equals(GameLib.DOWN))
 				gotoAndStop("down");
-			else if(pDirection.equals(GameData.RIGHT))
+			else if(pDirection.equals(GameLib.RIGHT))
 				gotoAndStop("right");
-			else if(pDirection.equals(GameData.LEFT))
+			else if(pDirection.equals(GameLib.LEFT))
 				gotoAndStop("left");
 			else
 			{

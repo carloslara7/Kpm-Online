@@ -2,109 +2,292 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28646dbc-89a0-4c5d-aa34-f1e991443db9" name="Default" comment="prueba">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kpm/kpm/Poset.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kpm/kpm/PosetManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013103decoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013103decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01320xDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01320xDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01392xDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01392xDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01393xDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01393xDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013x0x1xDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013x0x1xDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013x0xDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI013x0xDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01AndOtherAIs.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01AndOtherAIs.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01decoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01weightDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AI01weightDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/AbstractDoCoMoResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/AbstractDoCoMoResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/AbstractMobileTagResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/AbstractMobileTagResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/AbstractNDEFResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/AbstractNDEFResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/AbstractRSSReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/AbstractRSSReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/AddressBookAUResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/AddressBookAUResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/AddressBookDocomoResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/AddressBookDocomoResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/AddressBookParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/AddressBookParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/AlignmentPattern.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/AlignmentPattern.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/AlignmentPatternFinder.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/AlignmentPatternFinder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AnyAIDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/AnyAIDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/ArrayList.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/ArrayList.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/aztec/AztecDetectorResult.as" afterPath="$PROJECT_DIR$/google/zxing/aztec/AztecDetectorResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/aztec/AztecReader.as" afterPath="$PROJECT_DIR$/google/zxing/aztec/AztecReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/BarcodeFormat.as" afterPath="$PROJECT_DIR$/google/zxing/BarcodeFormat.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/BarcodeMatrix.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/BarcodeMatrix.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/BarcodeRow.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/BarcodeRow.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/Binarizer.as" afterPath="$PROJECT_DIR$/google/zxing/Binarizer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/BinaryBitmap.as" afterPath="$PROJECT_DIR$/google/zxing/BinaryBitmap.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/BitArray.as" afterPath="$PROJECT_DIR$/google/zxing/common/BitArray.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/BitArrayBuilder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/BitArrayBuilder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/BitMatrix.as" afterPath="$PROJECT_DIR$/google/zxing/common/BitMatrix.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/BitMatrixParser.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/BitMatrixParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/maxicode/decoder/BitMatrixParser.as" afterPath="$PROJECT_DIR$/google/zxing/maxicode/decoder/BitMatrixParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/decoder/BitMatrixParser.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/decoder/BitMatrixParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/BitMatrixParser.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/BitMatrixParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/BitSource.as" afterPath="$PROJECT_DIR$/google/zxing/common/BitSource.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/BitVector.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/BitVector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/BizcardResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/BizcardResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/BlockPair.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/BlockPair.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/BlockParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/BlockParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/BookmarkDoCoMoResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/BookmarkDoCoMoResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/BufferedImageLuminanceSource.as" afterPath="$PROJECT_DIR$/google/zxing/BufferedImageLuminanceSource.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/ByQuadrantReader.as" afterPath="$PROJECT_DIR$/google/zxing/multi/ByQuadrantReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/ByteMatrix.as" afterPath="$PROJECT_DIR$/google/zxing/common/ByteMatrix.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/CalendarParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/CalendarParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/common/CameraUtil.as" afterPath="$PROJECT_DIR$/kpm/common/CameraUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/CenterComparator.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/CenterComparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/CharacterSetECI.as" afterPath="$PROJECT_DIR$/google/zxing/common/CharacterSetECI.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/ChecksumException.as" afterPath="$PROJECT_DIR$/google/zxing/ChecksumException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/ClosestToAverageComparator.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/ClosestToAverageComparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/CodaBarReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/CodaBarReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/Code128Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/Code128Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/Code128Writer.as" afterPath="$PROJECT_DIR$/google/zxing/oned/Code128Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/Code39Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/Code39Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/Code39Writer.as" afterPath="$PROJECT_DIR$/google/zxing/oned/Code39Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/Code93Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/Code93Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/Collections.as" afterPath="$PROJECT_DIR$/google/zxing/common/Collections.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/Comparator.as" afterPath="$PROJECT_DIR$/google/zxing/common/Comparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/CurrentParsingState.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/CurrentParsingState.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/DataBlock.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/DataBlock.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataBlock.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataBlock.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/DataCharacter.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/DataCharacter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask000.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask000.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask001.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask001.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask010.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask010.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask011.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask011.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask100.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask100.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask101.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask101.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask110.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask110.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask111.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMask111.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMaskBase.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DataMaskBase.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/DataMatrixReader.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/DataMatrixReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/DecodeHintType.as" afterPath="$PROJECT_DIR$/google/zxing/DecodeHintType.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/DecodedBitStreamParser.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/DecodedBitStreamParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/maxicode/decoder/DecodedBitStreamParser.as" afterPath="$PROJECT_DIR$/google/zxing/maxicode/decoder/DecodedBitStreamParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/decoder/DecodedBitStreamParser.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/decoder/DecodedBitStreamParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DecodedBitStreamParser.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/DecodedBitStreamParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedChar.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedChar.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedInformation.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedInformation.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedNumeric.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedNumeric.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedObject.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/DecodedObject.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/aztec/decoder/Decoder.as" afterPath="$PROJECT_DIR$/google/zxing/aztec/decoder/Decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/Decoder.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/Decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/maxicode/decoder/Decoder.as" afterPath="$PROJECT_DIR$/google/zxing/maxicode/decoder/Decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/decoder/Decoder.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/decoder/Decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Decoder.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Decoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/DecoderResult.as" afterPath="$PROJECT_DIR$/google/zxing/common/DecoderResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/DefaultGridSampler.as" afterPath="$PROJECT_DIR$/google/zxing/common/DefaultGridSampler.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/aztec/detector/Detector.as" afterPath="$PROJECT_DIR$/google/zxing/aztec/detector/Detector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/detector/Detector.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/detector/Detector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/detector/Detector.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/detector/Detector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/Detector.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/Detector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/DetectorResult.as" afterPath="$PROJECT_DIR$/google/zxing/common/DetectorResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/EAN13Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/EAN13Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/EAN13Writer.as" afterPath="$PROJECT_DIR$/google/zxing/oned/EAN13Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/EAN8Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/EAN8Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/EAN8Writer.as" afterPath="$PROJECT_DIR$/google/zxing/oned/EAN8Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/EANManufacturerOrgSupport.as" afterPath="$PROJECT_DIR$/google/zxing/oned/EANManufacturerOrgSupport.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/ECB.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/ECB.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ECB.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ECB.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/ECBlocks.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/ECBlocks.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ECBlocks.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ECBlocks.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/ECI.as" afterPath="$PROJECT_DIR$/google/zxing/common/ECI.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/EG5PieceType.as" afterPath="$PROJECT_DIR$/kpm/games/game5/EG5PieceType.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/EmailAddressParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/EmailAddressParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/EmailAddressResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/EmailAddressResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/EmailDoCoMoResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/EmailDoCoMoResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/EncodeHintType.as" afterPath="$PROJECT_DIR$/google/zxing/EncodeHintType.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/Encoder.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/Encoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/Enumeration.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/Enumeration.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ErrorCorrectionLevel.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/ErrorCorrectionLevel.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/ExpandedPair.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/ExpandedPair.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/FieldParser.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/FieldParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/FinderPattern.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/FinderPattern.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPattern.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPattern.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPatternFinder.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPatternFinder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPatternInfo.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/FinderPatternInfo.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/FormatException.as" afterPath="$PROJECT_DIR$/google/zxing/FormatException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/FormatInformation.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/FormatInformation.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/detector/FurthestFromAverageComparator.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/detector/FurthestFromAverageComparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/G5.as" afterPath="$PROJECT_DIR$/kpm/games/game5/G5.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/game5/G5Lib.as" afterPath="$PROJECT_DIR$/kpm/games/game5/G5Lib.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GF256.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GF256.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GF256Poly.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GF256Poly.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/games/GameIgniter.as" afterPath="$PROJECT_DIR$/kpm/games/GameIgniter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GenericGF.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GenericGF.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GenericGFPoly.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/GenericGFPoly.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/GenericMultipleBarcodeReader.as" afterPath="$PROJECT_DIR$/google/zxing/multi/GenericMultipleBarcodeReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/GeoParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/GeoParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/GeoResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/GeoResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/GlobalHistogramBinarizer.as" afterPath="$PROJECT_DIR$/google/zxing/common/GlobalHistogramBinarizer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/GridSampler.as" afterPath="$PROJECT_DIR$/google/zxing/common/GridSampler.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/HashTable.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/HashTable.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/HybridBinarizer.as" afterPath="$PROJECT_DIR$/google/zxing/common/HybridBinarizer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ISBNParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ISBNParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ISBNResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ISBNResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/ITFReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/ITFReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/ITFWriter.as" afterPath="$PROJECT_DIR$/google/zxing/oned/ITFWriter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/IllegalArgumentException.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/IllegalArgumentException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adobe/images/JPGEncoder.as" afterPath="$PROJECT_DIR$/adobe/images/JPGEncoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/kpm/Kid2.as" afterPath="$PROJECT_DIR$/kpm/kpm/Kid2.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/kpm/KpmDB.as" afterPath="$PROJECT_DIR$/kpm/kpm/KpmDB.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/LocalBlockBinarizer.as" afterPath="$PROJECT_DIR$/google/zxing/common/LocalBlockBinarizer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/LuminanceSource.as" afterPath="$PROJECT_DIR$/google/zxing/LuminanceSource.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/MaskUtil.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/MaskUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/MatrixUtil.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/MatrixUtil.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/maxicode/MaxiCodeReader.as" afterPath="$PROJECT_DIR$/google/zxing/maxicode/MaxiCodeReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagMMSResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagMMSResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagRichWebParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagRichWebParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagRichWebResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagRichWebResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSMSResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSMSResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleCalendarResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleCalendarResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleContactResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleContactResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleWebResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagSimpleWebResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagTelResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/MobileTagTelResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Mode.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Mode.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/ModuleSizeComparator.as" afterPath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/ModuleSizeComparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/detector/MonochromeRectangleDetector.as" afterPath="$PROJECT_DIR$/google/zxing/common/detector/MonochromeRectangleDetector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/MultiDetector.as" afterPath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/MultiDetector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder.as" afterPath="$PROJECT_DIR$/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/MultiFormatOneDReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/MultiFormatOneDReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/MultiFormatReader.as" afterPath="$PROJECT_DIR$/google/zxing/MultiFormatReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/MultiFormatUPCEANReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/MultiFormatUPCEANReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/MultiFormatWriter.as" afterPath="$PROJECT_DIR$/google/zxing/MultiFormatWriter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/MultipleBarcodeReader.as" afterPath="$PROJECT_DIR$/google/zxing/multi/MultipleBarcodeReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFRecord.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFRecord.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFSmartPosterParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFSmartPosterParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFSmartPosterResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFSmartPosterResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFTextResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFTextResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFURIResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/optional/NDEFURIResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/NotFoundException.as" afterPath="$PROJECT_DIR$/google/zxing/NotFoundException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/OneDReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/OneDReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417ErrorCorrection.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417ErrorCorrection.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/PDF417Reader.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/PDF417Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417Writer.as" afterPath="$PROJECT_DIR$/google/zxing/pdf417/encoder/PDF417Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/Pair.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/Pair.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ParsedResultType.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ParsedResultType.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/PerspectiveTransform.as" afterPath="$PROJECT_DIR$/google/zxing/common/PerspectiveTransform.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/aztec/Point.as" afterPath="$PROJECT_DIR$/google/zxing/aztec/Point.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/kpm/Poset.as" afterPath="$PROJECT_DIR$/kpm/kpm/Poset.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/kpm/PosetManager.as" afterPath="$PROJECT_DIR$/kpm/kpm/PosetManager.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ProductParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ProductParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ProductResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ProductResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/encoder/QRCode.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/encoder/QRCode.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/multi/qrcode/QRCodeMultiReader.as" afterPath="$PROJECT_DIR$/google/zxing/multi/qrcode/QRCodeMultiReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/QRCodeReader.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/QRCodeReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/QRCodeWriter.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/QRCodeWriter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/RSS14Reader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/RSS14Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/RSSExpandedReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/expanded/RSSExpandedReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/rss/RSSUtils.as" afterPath="$PROJECT_DIR$/google/zxing/oned/rss/RSSUtils.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/Reader.as" afterPath="$PROJECT_DIR$/google/zxing/Reader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/ReaderException.as" afterPath="$PROJECT_DIR$/google/zxing/ReaderException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonDecoder.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonDecoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonEncoder.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonEncoder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonException.as" afterPath="$PROJECT_DIR$/google/zxing/common/reedsolomon/ReedSolomonException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/Result.as" afterPath="$PROJECT_DIR$/google/zxing/Result.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/ResultMetadataType.as" afterPath="$PROJECT_DIR$/google/zxing/ResultMetadataType.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/ResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/ResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/ResultPoint.as" afterPath="$PROJECT_DIR$/google/zxing/ResultPoint.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/ResultPointCallback.as" afterPath="$PROJECT_DIR$/google/zxing/ResultPointCallback.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/detector/ResultPointsAndTransitions.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/detector/ResultPointsAndTransitions.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/detector/ResultPointsAndTransitionsComparator.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/detector/ResultPointsAndTransitionsComparator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/SMSMMSResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/SMSMMSResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/SMSParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/SMSParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/StringBuilder.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/StringBuilder.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/TelParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/TelParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/TelResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/TelResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/TextParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/TextParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCAReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCAReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCAWriter.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCAWriter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCEANExtensionSupport.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCEANExtensionSupport.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCEANReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCEANReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCEANWriter.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCEANWriter.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/oned/UPCEReader.as" afterPath="$PROJECT_DIR$/google/zxing/oned/UPCEReader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/URIParsedResult.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/URIParsedResult.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/URIResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/URIResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zorked/URLNavigator.as" afterPath="$PROJECT_DIR$/zorked/URLNavigator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/URLTOResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/URLTOResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/Utils.as" afterPath="$PROJECT_DIR$/google/zxing/common/flexdatatypes/Utils.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/VCardResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/VCardResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/result/VEventResultParser.as" afterPath="$PROJECT_DIR$/google/zxing/client/result/VEventResultParser.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/Version.as" afterPath="$PROJECT_DIR$/google/zxing/datamatrix/decoder/Version.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Version.as" afterPath="$PROJECT_DIR$/google/zxing/qrcode/decoder/Version.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/detector/WhiteRectangleDetector.as" afterPath="$PROJECT_DIR$/google/zxing/common/detector/WhiteRectangleDetector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/Writer.as" afterPath="$PROJECT_DIR$/google/zxing/Writer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/WriterException.as" afterPath="$PROJECT_DIR$/google/zxing/WriterException.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kpm/kpm/ZxingClient.as" afterPath="$PROJECT_DIR$/kpm/kpm/ZxingClient.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuzum/search/mcListItem.as" afterPath="$PROJECT_DIR$/vuzum/search/mcListItem.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/client/testClass.as" afterPath="$PROJECT_DIR$/google/zxing/client/testClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google/zxing/common/zxingByteArray.as" afterPath="$PROJECT_DIR$/google/zxing/common/zxingByteArray.as" />
     </list>
     <ignored path="Kpm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399964212367" ignored="false" />
-    <file path="/a.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1369802563933" ignored="false" />
-    <file path="/Game3.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379479510568" ignored="false" />
-    <file path="/fragment.js2" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399409031779" ignored="false" />
-    <file path="$PROJECT_DIR$/../DriverAIR.swf" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1369855722789" ignored="false" />
-    <file path="/KpmSoundLibrary.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379475337031" ignored="false" />
-    <file path="/a.dummy" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399580772285" ignored="false" />
-    <file path="/Game4.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379466203084" ignored="false" />
-    <file path="/Game4Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1376327116636" ignored="false" />
-    <file path="/Game1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379606234462" ignored="false" />
-    <file path="/Game1Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379479119584" ignored="false" />
-    <file path="/GameData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399585578585" ignored="false" />
-    <file path="/Game2.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379476333292" ignored="false" />
-    <file path="/Driver.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1397766232539" ignored="false" />
-    <file path="/Game4Platforms.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1370490500143" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/.idea/workspace.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372115889015" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/.idea/compiler.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372115889015" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/.idea/modules.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372115889015" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/.idea/misc.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372115885593" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/driver.html" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372117107430" ignored="false" />
-    <file path="/driver.html" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372116640844" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/js/soundLibrary.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372204470931" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/lab.html" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372205172038" ignored="false" />
-    <file path="/lab.html" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372205165598" ignored="false" />
-    <file path="/fragment.java" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372117770125" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/js/apptestSound.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372118704329" ignored="false" />
-    <file path="/soundLibrary.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372204418430" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/js/enums.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372261009656" ignored="false" />
-    <file path="/enums.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372260855958" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/wickedbytes/A html5 love story/html5kpm2/js/kpmUtils.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1372261273659" ignored="false" />
-    <file path="/Game4Message.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373766293192" ignored="false" />
-    <file path="/Game4Player.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373386476873" ignored="false" />
-    <file path="/KidCreatorPage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1393130765148" ignored="false" />
-    <file path="/AirImagePicker.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373479558874" ignored="false" />
-    <file path="/Globals.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1373560881309" ignored="false" />
-    <file path="/Preloader.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374769821855" ignored="false" />
-    <file path="/Util.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399937729009" ignored="false" />
-    <file path="/KidLoginPage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1393100678540" ignored="false" />
-    <file path="/Game2Puzzle.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374213409662" ignored="false" />
-    <file path="/Parser copy.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374429898702" ignored="false" />
-    <file path="/Parser.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374457187224" ignored="false" />
-    <file path="/PdfReporterPage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1382545928581" ignored="false" />
-    <file path="/StandardDynamicParser.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374510074030" ignored="false" />
-    <file path="/DefaultPdf.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1382639921997" ignored="false" />
-    <file path="/UIGod.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1374688427411" ignored="false" />
-    <file path="/PDFReporter.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375551696119" ignored="false" />
-    <file path="/KpmLogTool.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1388790510802" ignored="false" />
-    <file path="/KpmFtp.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379984154422" ignored="false" />
-    <file path="/KpmIO.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1392924107570" ignored="false" />
-    <file path="/DriverData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1397766433899" ignored="false" />
-    <file path="/SMTPClient.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375419330753" ignored="false" />
-    <file path="/MimeBodyPart.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375463110754" ignored="false" />
-    <file path="/MimeMultiPart.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375463187705" ignored="false" />
-    <file path="/MimeBinaryPart.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375468486257" ignored="false" />
-    <file path="/AirxMailConfig.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375464114568" ignored="false" />
-    <file path="/MimeMessage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375469357145" ignored="false" />
-    <file path="/MailParser.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375469525473" ignored="false" />
-    <file path="/SMTPSender.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375473273744" ignored="false" />
-    <file path="/KidCreatorPageOld.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1375717978621" ignored="false" />
-    <file path="/InputParser.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1390937769558" ignored="false" />
-    <file path="/ClassPage.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1390937645106" ignored="false" />
-    <file path="/Character.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1377289003581" ignored="false" />
-    <file path="/Counter.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399853630027" ignored="false" />
-    <file path="/TreeMenuItem.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1377739450875" ignored="false" />
-    <file path="/TreeMenu.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1378311436461" ignored="false" />
-    <file path="/DriverIOS.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1377855699727" ignored="false" />
-    <file path="/Game2Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379474999722" ignored="false" />
-    <file path="/Game2Data copy 1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379476083950" ignored="false" />
-    <file path="$PROJECT_DIR$/../../Kpm 1.1.A/com/kpm/kpm/Driver.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1379980526246" ignored="false" />
-    <file path="/jquery.dataTables.js" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1380067197416" ignored="false" />
-    <file path="/Kid.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1397767194163" ignored="false" />
-    <file path="/KpmDB.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1392686553640" ignored="false" />
-    <file path="/ImgData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1382491494291" ignored="false" />
-    <file path="/KpmUI.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1383238236503" ignored="false" />
-    <file path="/ZxingClient.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1384202499630" ignored="false" />
-    <file path="/CameraUtil.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1383433538060" ignored="false" />
-    <file path="/UIConst.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1383238072280" ignored="false" />
-    <file path="/KpmBubble.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1397246660671" ignored="false" />
-    <file path="/Poset.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399349860944" ignored="false" />
-    <file path="/PosetManager.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1398470339729" ignored="false" />
-    <file path="/Driver-app.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1389202588197" ignored="false" />
-    <file path="/Search.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1392077216599" ignored="false" />
-    <file path="/Header.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391634532063" ignored="false" />
-    <file path="/DisplayShortcuts.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636200911" ignored="false" />
-    <file path="/FilterShortcuts.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636386523" ignored="false" />
-    <file path="/List.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636244361" ignored="false" />
-    <file path="/Scrollbar.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636260981" ignored="false" />
-    <file path="/ScrollBar.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636270020" ignored="false" />
-    <file path="/TextShortcuts.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391636317283" ignored="false" />
-    <file path="/ColorShortcuts.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1391815322596" ignored="false" />
-    <file path="/EBName.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399496001504" ignored="false" />
-    <file path="/EBStd.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399337254118" ignored="false" />
-    <file path="/*.regexp" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399924121993" ignored="false" />
-    <file path="/Game5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399965381901" ignored="false" />
-    <file path="/Game5Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399926823571" ignored="false" />
-    <file path="/EGoal.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399410992330" ignored="false" />
-    <file path="/EGameCharacter.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399412657403" ignored="false" />
-    <file path="/GameComponent.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1399944545746" ignored="false" />
+    <file path="/Dummy.txt" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401653686092" ignored="false" />
+    <file path="/GameComponent.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401739063740" ignored="false" />
+    <file path="/G5.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401749018045" ignored="false" />
+    <file path="/*.regexp" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401728329834" ignored="false" />
+    <file path="/G5Lib.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401737551673" ignored="false" />
+    <file path="/a.dummy" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401736914812" ignored="false" />
+    <file path="/GameLib.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401746792440" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/walkthewalk/GameLevel.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580383" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/TiledGameComponent.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580383" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/EColor.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580384" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/KpmSoundPlayer.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580385" ignored="false" />
+    <file path="$PROJECT_DIR$/greensock/layout/AutoFitArea.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580393" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/ENumberForm.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580395" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/KpmShape.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580395" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/game5/Game51Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580396" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/game5/Game51.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580396" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/KpmMenu2.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580397" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/kpm/KpmBubble.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580397" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/IGame.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580415" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/kpm/DriverData.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580416" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/kpm/KpmLogTool.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580417" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/EventManager.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580442" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/MovieList.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580665" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/kpm/DriverWeb.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580666" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/kpm/EBStd.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580667" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/KpmSound.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580667" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game1Player.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580668" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/reporter/pdf/kids/000000011/000000011_log.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580668" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2Puzzle.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580668" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/common/Board.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580668" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2 copy 1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580669" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2Old.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580669" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580669" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game1Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580670" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/reporter/pdf/kids/000000012/000000012_log.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580670" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/EState.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580670" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/G3As3.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580671" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/reporter/pdf/kids/000000013/000000013_log.xml" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580671" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game1SmallArrow.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580672" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2Data copy 1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580672" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2ShapeList copy 2.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580673" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580673" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2ShapeList.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580674" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/Game2ShapeList copy 1.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580674" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/game4/Game4Data.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580677" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/game4/Game4pex.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580677" ignored="false" />
+    <file path="$PROJECT_DIR$/kpm/games/walkthewalk/Game3.as" changelist="28646dbc-89a0-4c5d-aa34-f1e991443db9" time="1401748580678" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +302,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -156,6 +338,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -169,24 +352,13 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51549053">
+    <splitter split-orientation="horizontal" split-proportion="0.4995618">
       <split-first>
         <leaf>
-          <file leaf-file-name="Game5.as" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
+          <file leaf-file-name="GameIgniter.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/GameIgniter.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="147" column="10" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.33281493">
-                  <folding>
-                    <element signature="e#187#217#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EBStd.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/kpm/EBStd.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="-12.692307">
+                <state line="62" column="0" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -195,52 +367,34 @@
           <file leaf-file-name="EBName.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/kpm/EBName.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="177" column="43" selection-start="11857" selection-end="11857" vertical-scroll-proportion="0.0">
+                <state line="229" column="31" selection-start="13391" selection-end="13391" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GameComponent.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
+          <file leaf-file-name="Poset.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/kpm/Poset.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="50" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
+                <state line="101" column="0" selection-start="3274" selection-end="3274" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MovieList.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/common/MovieList.as">
+          <file leaf-file-name="Driver.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/kpm/Driver.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="112" column="49" selection-start="2584" selection-end="2597" vertical-scroll-proportion="0.0">
+                <state line="757" column="13" selection-start="23446" selection-end="23446" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="EventManager.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/common/EventManager.as">
+          <file leaf-file-name="Goal.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/common/Goal.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="31" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Game5Data.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5Data.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="37" selection-start="484" selection-end="486" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ENumberForm.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/common/ENumberForm.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="35" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+                <state line="63" column="36" selection-start="2091" selection-end="2094" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -249,17 +403,28 @@
           <file leaf-file-name="Counter.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/Counter.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+                <state line="19" column="30" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GameData.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/common/GameData.as">
+          <file leaf-file-name="Game.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/common/Game.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="291" column="16" selection-start="10191" selection-end="10191" vertical-scroll-proportion="0.0">
+                <state line="75" column="38" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="G5.as" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/kpm/games/game5/G5.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="526" column="16" selection-start="16576" selection-end="16576" vertical-scroll-proportion="0.3048048">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -271,16 +436,7 @@
           <file leaf-file-name="Util.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/common/Util.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1285" column="25" selection-start="36543" selection-end="36543" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Game2ShapeList.as" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kpm/games/Game2ShapeList.as">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="34" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+                <state line="339" column="31" selection-start="9725" selection-end="9725" vertical-scroll-proportion="-10.269231">
                   <folding />
                 </state>
               </provider>
@@ -289,18 +445,82 @@
           <file leaf-file-name="Game1.as" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="-12.846154">
+                <state line="737" column="40" selection-start="21736" selection-end="21736" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameCounter.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/walkthewalk/GameCounter.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game4Message.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/game4/Game4Message.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="267" column="9" selection-start="8536" selection-end="8536" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game4.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/game4/Game4.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="332" column="40" selection-start="12211" selection-end="12211" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="KpmSoundLibrary.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/common/KpmSoundLibrary.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="516" column="41" selection-start="24941" selection-end="24951" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ENumber.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/common/ENumber.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="60" column="8" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameLib.as" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/kpm/common/GameLib.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="40" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.5202312">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameComponent.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="223" column="0" selection-start="6366" selection-end="6366" vertical-scroll-proportion="-23.923077">
                   <folding>
-                    <element signature="n#!!doc" expanded="true" />
+                    <marker date="1401582772000" expanded="true" signature="5949:6303" placeholder="{...}" />
+                    <marker date="1401582772000" expanded="true" signature="5963:6277" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game1Data.as" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
+          <file leaf-file-name="G5Lib.as" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kpm/games/game5/G5Lib.as">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.5426573">
+                <state line="408" column="9" selection-start="13389" selection-end="13389" vertical-scroll-proportion="-3.1153846">
                   <folding />
                 </state>
               </provider>
@@ -324,25 +544,51 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GotoClassSymbolConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="Apple JS" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Decompiled SWF" />
+      <filtered-out-file-type name="ECMA Script Level 4" />
+      <filtered-out-file-type name="ECMAScript 6" />
+      <filtered-out-file-type name="GWT JavaScript" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="JAVA" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="JavaScript 1.5" />
+      <filtered-out-file-type name="JavaScript 1.6" />
+      <filtered-out-file-type name="JavaScript 1.7" />
+      <filtered-out-file-type name="JavaScript 1.8" />
+      <filtered-out-file-type name="Mxml" />
+      <filtered-out-file-type name="RELAX-NG" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="TEXT" />
+      <filtered-out-file-type name="TypeScript" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/kpm/kpm/PosetManager.as" />
-        <option value="$PROJECT_DIR$/kpm/kpm/EBStd.as" />
-        <option value="$PROJECT_DIR$/kpm/common/EGame.as" />
-        <option value="$PROJECT_DIR$/kpm/kpm/Poset.as" />
-        <option value="$PROJECT_DIR$/kpm/kpm/DriverData.as" />
-        <option value="$PROJECT_DIR$/kpm/games/game5/Game5Player.as" />
-        <option value="$PROJECT_DIR$/kpm/games/game5/Game51.as" />
-        <option value="$PROJECT_DIR$/kpm/common/EGoal.as" />
-        <option value="$PROJECT_DIR$/kpm/games/EGameCharacter.as" />
-        <option value="$PROJECT_DIR$/kpm/common/GameData.as" />
-        <option value="$PROJECT_DIR$/kpm/common/Counter.as" />
-        <option value="$PROJECT_DIR$/kpm/kpm/EBName.as" />
-        <option value="$PROJECT_DIR$/kpm/games/game5/Game5Data.as" />
-        <option value="$PROJECT_DIR$/kpm/common/Util.as" />
-        <option value="$PROJECT_DIR$/kpm/common/GameComponent.as" />
+        <option value="$PROJECT_DIR$/kpm/games/GameIgniter.as" />
         <option value="$PROJECT_DIR$/kpm/games/game5/Game5.as" />
+        <option value="$PROJECT_DIR$/kpm/games/game5/Game5Data.as" />
+        <option value="$PROJECT_DIR$/kpm/common/Game.as" />
+        <option value="$PROJECT_DIR$/kpm/common/EColor.as" />
+        <option value="$PROJECT_DIR$/kpm/common/Goal.as" />
+        <option value="$PROJECT_DIR$/kpm/common/KpmSoundLibrary.as" />
+        <option value="$PROJECT_DIR$/kpm/games/game4/Game4Message.as" />
+        <option value="$PROJECT_DIR$/kpm/games/walkthewalk/GameCounter.as" />
+        <option value="$PROJECT_DIR$/kpm/games/Game1.as" />
+        <option value="$PROJECT_DIR$/kpm/common/ENumber.as" />
+        <option value="$PROJECT_DIR$/kpm/games/game5/G5Lib.as" />
+        <option value="$PROJECT_DIR$/kpm/common/GameComponent.as" />
+        <option value="$PROJECT_DIR$/kpm/common/Util.as" />
+        <option value="$PROJECT_DIR$/kpm/common/GameLib.as" />
+        <option value="$PROJECT_DIR$/kpm/games/game5/G5.as" />
       </list>
     </option>
   </component>
@@ -378,6 +624,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -424,18 +671,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kpm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="kpm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="games" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -448,17 +716,18 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="kpm.kpm" />
+      <recent name="kpm.games" />
       <recent name="kpm.games.game5" />
       <recent name="kpm.common" />
-      <recent name="kpm.kpm" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.com">
+  <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -578,27 +847,20 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Flash App.com" />
     </list>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28646dbc-89a0-4c5d-aa34-f1e991443db9" name="Default" comment="prueba" />
+      <created>1401154837378</created>
+      <updated>1401154837378</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
@@ -626,22 +888,32 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35582012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26676077" sideWeight="0.6706349" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17995766" sideWeight="0.5992063" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1947777" sideWeight="0.6441799" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40079364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -703,120 +975,123 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game2Puzzle.as">
+    <entry file="file://$PROJECT_DIR$/kpm/games/game4/Game4.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="24" selection-start="4941" selection-end="4941" vertical-scroll-proportion="0.0">
+        <state line="332" column="40" selection-start="12211" selection-end="12211" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/Counter.as">
+    <entry file="file://$PROJECT_DIR$/kpm/common/KpmSoundLibrary.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+        <state line="516" column="41" selection-start="24941" selection-end="24951" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/EventManager.as">
+    <entry file="file://$PROJECT_DIR$/kpm/common/ENumber.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="31" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
+        <state line="60" column="8" selection-start="3116" selection-end="3116" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/ENumberForm.as">
+    <entry file="file://$PROJECT_DIR$/kpm/games/walkthewalk/GameCounter.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Applications/Adobe Flash Builder 4.7/sdks/4.6.0/frameworks/libs/air/airglobal.swc!/library.swf">
+    <entry file="file://$PROJECT_DIR$/kpm/games/game5/G5Lib.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="22" selection-start="8303" selection-end="8303" vertical-scroll-proportion="0.33236995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/MovieList.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="49" selection-start="2584" selection-end="2597" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5Data.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="484" selection-end="486" vertical-scroll-proportion="0.0">
+        <state line="408" column="9" selection-start="13389" selection-end="13389" vertical-scroll-proportion="-3.1153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/common/GameComponent.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="50" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/common/GameData.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="16" selection-start="10191" selection-end="10191" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="223" column="0" selection-start="6366" selection-end="6366" vertical-scroll-proportion="-23.923077">
+          <folding>
+            <marker date="1401582772000" expanded="true" signature="5949:6303" placeholder="{...}" />
+            <marker date="1401582772000" expanded="true" signature="5963:6277" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/common/Util.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1285" column="25" selection-start="36543" selection-end="36543" vertical-scroll-proportion="0.0">
+        <state line="339" column="31" selection-start="9725" selection-end="9725" vertical-scroll-proportion="-10.269231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game2ShapeList.as">
+    <entry file="file://$PROJECT_DIR$/kpm/common/Game.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+        <state line="75" column="38" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game1.as">
+    <entry file="file://$PROJECT_DIR$/kpm/common/Counter.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2084" column="34" selection-start="59198" selection-end="59213" vertical-scroll-proportion="-12.846154">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/Game1Data.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="686" column="92" selection-start="18784" selection-end="18904" vertical-scroll-proportion="0.5426573">
+        <state line="19" column="30" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/kpm/EBStd.as">
+    <entry file="file://$PROJECT_DIR$/kpm/common/Goal.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="866" selection-end="870" vertical-scroll-proportion="-12.692307">
+        <state line="63" column="36" selection-start="2091" selection-end="2094" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/GameIgniter.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kpm/kpm/EBName.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="43" selection-start="11857" selection-end="11857" vertical-scroll-proportion="0.0">
+        <state line="229" column="31" selection-start="13391" selection-end="13391" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kpm/games/game5/Game5.as">
+    <entry file="file://$PROJECT_DIR$/kpm/kpm/Poset.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="10" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.33281493">
+        <state line="101" column="0" selection-start="3274" selection-end="3274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/kpm/Driver.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="757" column="13" selection-start="23446" selection-end="23446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/common/GameLib.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.5202312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kpm/games/game5/G5.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="526" column="16" selection-start="16576" selection-end="16576" vertical-scroll-proportion="0.3048048">
           <folding>
-            <element signature="e#187#217#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,6 +1102,18 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -861,7 +1148,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>com|com</last-edited>
+          <last-edited>com</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

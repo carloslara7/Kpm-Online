@@ -252,7 +252,7 @@ package com.kpm.kpm
 			CursorManager.init(this.stage);
 			CursorManager.setCursor(new CursorIdle());
 			
-			mouseIdle  = new MouseIdleMonitor(stage, GameData.MAX_IDLE_TIME);
+			mouseIdle  = new MouseIdleMonitor(stage, GameLib.MAX_IDLE_TIME);
 			mouseIdle.addEventListener(MouseIdleMonitorEvent.MOUSE_ACTIVE, onMouseActive);
 			mouseIdle.addEventListener(MouseIdleMonitorEvent.MOUSE_IDLE, onMouseIdle);
 			mouseIdle.start();
@@ -690,14 +690,14 @@ package com.kpm.kpm
 		{
 			if(add)
 			{
-				currentGame.addEventListener (GameData.RETURN_TO_DRIVER, returningToDriver);
-				currentGame.addEventListener (GameData.BUBBLE_FINISHED, onBubbleFinished);
+				currentGame.addEventListener (GameLib.RETURN_TO_DRIVER, returningToDriver);
+				currentGame.addEventListener (GameLib.BUBBLE_FINISHED, onBubbleFinished);
 				//currentGame.addEventListener (GameData.BUBBLE_FAILED, onBubbleFailed);
 			}
 			else
 			{
-				currentGame.removeEventListener (GameData.RETURN_TO_DRIVER, returningToDriver);
-				currentGame.removeEventListener(GameData.BUBBLE_FINISHED, onBubbleFinished);
+				currentGame.removeEventListener (GameLib.RETURN_TO_DRIVER, returningToDriver);
+				currentGame.removeEventListener(GameLib.BUBBLE_FINISHED, onBubbleFinished);
 				//currentGame.removeEventListener(GameData.BUBBLE_FAILED, onBubbleFailed);
 			}
 			

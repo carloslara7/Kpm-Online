@@ -58,9 +58,10 @@ package com.kpm.common
 			achievedGoals = new Array();
 			totalTasks = pTotalTasks;
 			succededTaskCounter = taskCounter = attemptCounter = distanceFromTarget = backtrackCounter = timeFirstMove = 0;
-			
-			
-			allGoals.push(tempGoal);		 
+
+
+            Util.printArray([ "TotalTasks",totalTasks, "Goal ", pGoal],"new Goal");
+            allGoals.push(tempGoal);
 		}
 	
 		public function answerEndsTask() : Boolean
